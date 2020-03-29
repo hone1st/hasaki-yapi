@@ -109,3 +109,14 @@ func GetHeader(t HeaderType) *header {
 		Value: t,
 	}
 }
+
+func GetHeaders(mp map[string]HeaderType) []*header {
+	headers := make([]*header, 0)
+	for k, v := range mp {
+		headers = append(headers, &header{
+			Name:  k,
+			Value: v,
+		})
+	}
+	return headers
+}

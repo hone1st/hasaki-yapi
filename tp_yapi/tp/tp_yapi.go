@@ -50,8 +50,9 @@ type TpYapi struct {
 }
 
 var (
-	tp   *TpYapi
-	once sync.Once
+	tp    *TpYapi
+	once  sync.Once
+	tpApi *TpApiCollect
 )
 
 func InitTpYapi() *TpYapi {
@@ -92,9 +93,15 @@ type TpApiCollect struct {
 	SuccessTpApi map[string]map[string]*yapi.Api `json:"success_tp_api" comment:"失败的"`
 }
 
-func (t *TpYapi) Scan() {
-	fmt.Println(t.ScanDir)
+func (t *TpYapi) Scan() *TpApiCollect {
+	tpApi = &TpApiCollect{
+		TpApi:        make(map[string]map[string]*yapi.Api),
+		FailureTpApi: make(map[string]map[string]*yapi.Api),
+		SuccessTpApi: make(map[string]map[string]*yapi.Api),
+	}
 	_ = filepath.Walk(t.ScanDir, t.walk)
+
+	return tpApi
 }
 
 func (t *TpYapi) walk(filename string, fi os.FileInfo, err error) error {
@@ -107,39 +114,61 @@ func (t *TpYapi) walk(filename string, fi os.FileInfo, err error) error {
 		if cateName == "" {
 			return nil
 		}
-		cateName = Replace(cateName, "", "@api")
-
+		cateName = Replace(cateName, "", "@api", " ")
 		modules := Split(strings.Replace(filename, Append(true, t.Controller, fi.Name()), "", -1))
 		module := modules[len(modules)-1]
 		control := Replace(fi.Name(), "", t.FileSuffix, ".php", ".class.php", "controller", "Controller")
-
-		dealFunction(b)
-		fmt.Println(cateName)
-		fmt.Println(control)
-		fmt.Println(module)
-		os.Exit(9)
+		dealFunction(b, cateName, "/"+module+"/"+control, t.PathSuffix)
 	}
 	return nil
 }
 
-func dealFunction(b []byte) []*yapi.Api {
-	apis := make([]*yapi.Api, 0)
-
+func dealFunction(b []byte, cateName, path, suffix string) {
 	re, _ := regexp.Compile("\\s+\\/\\*\\*[^`]*?\\)")
 	bs := re.FindAll(b, -1)
 	for _, v := range bs {
-		if Contains(string(v), true, "namespace", "class") || (!Contains(string(v), true, "public", "function")) {
+		if Contains(string(v), false, "namespace", "class", "@api") || (!Contains(string(v), true, "public", "function")) {
 			continue
 		}
 		reName, _ := regexp.Compile(`function\s*?([^-~\s]*?)\(`)
 		name := Replace(string(reName.Find(v)), "", "function", " ", "(")
-		reDesc, _ := regexp.Compile("[^/\\*\n(\\s+)]+[\\s]*?[^/*\n(\\s+)]+")
-		desc := string(reDesc.Find(v))
-		dealFiled(v)
-		fmt.Println(name)
-		fmt.Println(desc)
-	}
+		reTitle, _ := regexp.Compile("[^/\\*\n(\\s+)]+[\\s]*?[^/*\n(\\s+)]+")
+		title := string(reTitle.Find(v))
+		fields := dealFiled(v)
+		tempApi := &yapi.Api{
+			Title:               title,
+			Path:                path + "/" + name + suffix,
+			CatId:               0,
+			Status:              yapi.Done,
+			Method:              yapi.Post,
+			ReqBodyIsJsonSchema: false,
+			ResBodyIsJsonSchema: false,
+			Desc:                string(v),
+			Markdown:            string(v),
+			ReqBodyOther:        "",
+			ReqBodyType:         "",
+			ReqQuery:            nil,
+			ReqBodyForm:         fields,
+			ReqHeaders: yapi.GetHeaders(map[string]yapi.HeaderType{
+				"Content-Type": yapi.XWwwFormUrlencoded,
+			}),
+			ResBody:     "",
+			ResBodyType: "",
+		}
+		if len(fields) > 0 {
+			tempApi.ReqBodyType = yapi.ReqForm
+		}
 
+		if _, ex := tpApi.TpApi[cateName]; !ex {
+			tpApi.TpApi[cateName] = make(map[string]*yapi.Api)
+			if _, exx := tpApi.TpApi[cateName][path+"/"+name+suffix]; !exx {
+				tpApi.TpApi[cateName][path+"/"+name+suffix] = tempApi
+			}
+		} else {
+			tpApi.TpApi[cateName][path+"/"+name+suffix] = tempApi
+		}
+
+	}
 }
 
 // 获取字段信息
@@ -149,7 +178,7 @@ func dealFiled(b []byte) []*yapi.Field {
 	reFiled, _ := regexp.Compile("\\(([^`]*?)\\)")
 	fieldsStr := reFiled.Find(b)
 	if !Contains(string(fieldsStr), true, "$") {
-		return fs
+		return nil
 	}
 	fields := strings.Split(Replace(string(fieldsStr), "", " int", " int ", " string", " string ", " array", " array ", "(", ")", "\r\n", " "), ",")
 	for _, v := range fields {

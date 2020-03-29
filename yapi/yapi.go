@@ -294,14 +294,21 @@ func (y *Yapi) InterfaceAddCate(query map[string]interface{}) (int, error) {
 
 func deleteEmpty(query map[string]interface{}) map[string]interface{} {
 	for k, v := range query {
+		if v == nil {
+			delete(query, k)
+			continue
+		}
 		if reflect.TypeOf(v).Kind() == reflect.String && v.(string) == "" {
 			delete(query, k)
+			continue
 		}
 		if reflect.TypeOf(v).Kind() == reflect.Float64 && v.(float64) == 0 {
 			delete(query, k)
+			continue
 		}
 		if reflect.TypeOf(v).Kind() == reflect.Slice && len(v.([]interface{})) == 0 {
 			delete(query, k)
+			continue
 		}
 	}
 	return query

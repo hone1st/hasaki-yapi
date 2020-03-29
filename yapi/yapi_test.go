@@ -6,7 +6,7 @@ import (
 )
 
 func Init() {
-	Yinstace("", "", 149)
+	Yinstace("0e7c10f66b5fc6b272e92927cd660d161fa5b02d70b6f6db87ac3d11d5b5932a", "http://api.ouxuan.net", 149)
 
 }
 
