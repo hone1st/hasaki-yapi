@@ -5,15 +5,16 @@ import (
 	"fmt"
 	"hasaki-yapi/tp_yapi/tp"
 	"hasaki-yapi/yapi"
+	"io/ioutil"
 	"log"
+	"os"
+	"time"
 )
 
 func main() {
-	tpY := tp.InitTpYapi()
-	tpApi := tpY.Scan()
-
-	yap := yapi.Yinstace("22f43fc34baf856853e5f1c1618bf6df2e8511865b9b45ca616552cd6ded1cd7", "http://api.ouxuan.net", 229)
-	yResult, err := yapi.YapiResultSetInst(yap)
+	c := tp.InitTpYapi()
+	tpApi := c.Tp.Scan()
+	yResult, err := yapi.YapiResultSetInst(c.Yapi)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -24,7 +25,7 @@ func main() {
 			catId = cate.Id
 			fmt.Printf("分类已存在：【%s】！\r\n", k)
 		} else {
-			catId, err = yap.InterfaceAddCate(transforMap(&yapi.Cate{
+			catId, err = c.Yapi.InterfaceAddCate(transforMap(&yapi.Cate{
 				Name: k,
 				Desc: k,
 			}))
@@ -34,20 +35,39 @@ func main() {
 			}
 			fmt.Printf("添加分类：【%s】成功！\r\n", k)
 		}
+
+		if _, ex := tpApi.SuccessTpApi[k]; !ex {
+			tpApi.SuccessTpApi[k] = make(map[string]*yapi.Api)
+		}
+		if _, ex := tpApi.FailureTpApi[k]; !ex {
+			tpApi.FailureTpApi[k] = make(map[string]*yapi.Api)
+		}
+
 		for kk, vv := range v {
 			fmt.Println("------------------------------------")
 			vv.CatId = catId
-			_, err = yap.InterfaceSave(transforMap(vv))
+			_, err = c.Yapi.InterfaceSave(transforMap(vv))
 			if err != nil {
-				fmt.Printf("添加接口：【%s】失败！原因：【%s】\r\n", kk, err.Error())
+				tpApi.FailureTpApi[k][kk] = vv
+				fmt.Printf("添加接口失败！\r\n路径：【%s】\r\n名字：【%s】\r\n原因：【%s】\r\n", kk, vv.Title, err.Error())
 			} else {
-				fmt.Printf("添加接口：【%s】成功！\r\n", kk)
+				tpApi.SuccessTpApi[k][kk] = vv
+				fmt.Printf("添加接口成功！\r\n路径：【%s】\r\n名字：【%s】\r\n", kk, vv.Title)
 			}
 			fmt.Println("------------------------------------")
 		}
 		fmt.Println("=====================================")
 	}
+	t := time.Now().Format("2006_01_02_15_04_05")
+	os.MkdirAll("./log/"+t, 0777)
+	success, _ := json.MarshalIndent(tpApi.SuccessTpApi, " ", " ")
+	_ = ioutil.WriteFile("./log/"+t+"/success_.json", success, 0777)
+	failure, _ := json.MarshalIndent(tpApi.FailureTpApi, " ", " ")
+	_ = ioutil.WriteFile("./log/"+t+"/failure_.json", failure, 0777)
 
+	fmt.Println("按下任意键结束：")
+	var i int
+	fmt.Scanf("按下任意键后enter结束：%i",i)
 }
 
 func transforMap(v interface{}) map[string]interface{} {

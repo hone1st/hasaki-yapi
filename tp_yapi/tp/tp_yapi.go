@@ -49,20 +49,27 @@ type TpYapi struct {
 	Controller string `comment:"扫描的文件目录"`
 }
 
+type Config struct {
+	Tp   *TpYapi
+	Yapi *yapi.Yapi
+}
+
 var (
+	c     *Config
 	tp    *TpYapi
 	once  sync.Once
 	tpApi *TpApiCollect
 )
 
-func InitTpYapi() *TpYapi {
+func InitTpYapi() *Config {
 	once.Do(func() {
-		tp = readConfig()
+		c = readConfig()
+		tp = c.Tp
 	})
-	return tp
+	return c
 }
 
-func readConfig() *TpYapi {
+func readConfig() *Config {
 	args := os.Args[1:]
 	var configPath string
 	if len(args) >= 2 && (args[0] == "-c" || args[0] == "-C") {
@@ -79,12 +86,26 @@ func readConfig() *TpYapi {
 	if err != nil {
 		log.Fatalf("配置文件：%s不存在！", configPath)
 	}
-	tp = &TpYapi{}
-	err = yaml.Unmarshal(yamlFile, tp)
+	c := &Config{}
+	err = yaml.Unmarshal(yamlFile, c)
+	if c.Yapi == nil || c.Tp == nil {
+
+		log.Fatal(`配置文件不准确:例子如下
+tp:
+  scandir: F:\OneDrive\huishi-shop\application
+  pathsuffix: .json
+  filesuffix: .class.php
+  controller: controller
+yapi:
+  token: 5af10be82269b7f3dfae11ad76f086fd0909223962ebbda6101
+  projectid: 23
+  host: http://api.example.net
+`)
+	}
 	if err != nil {
 		log.Fatalf("配置文件解析失败：%s", err)
 	}
-	return tp
+	return c
 }
 
 type TpApiCollect struct {
@@ -180,13 +201,17 @@ func dealFiled(b []byte) []*yapi.Field {
 	if !Contains(string(fieldsStr), true, "$") {
 		return nil
 	}
-	fields := strings.Split(Replace(string(fieldsStr), "", " int", " int ", " string", " string ", " array", " array ", "(", ")", "\r\n", " "), ",")
+	fields := strings.Split(Replace(string(fieldsStr), "", "int ", " int", " int ", " string", "string ", " string ", "array ", " array", " array ", "(", ")", "\r\n", " "), ",")
 	for _, v := range fields {
+		if !Contains(v, true, "$") {
+			continue
+		}
 		f := &yapi.Field{}
 		tempS := strings.Split(v, "=")
 		if len(tempS) == 1 {
 			f.Name = Replace(tempS[0], "", "$")
 			f.Example = ""
+			f.Required = 1
 		} else if len(tempS) == 2 {
 			f.Name = Replace(tempS[0], "", "$")
 			f.Example = tempS[1]
@@ -194,15 +219,14 @@ func dealFiled(b []byte) []*yapi.Field {
 		if f.Name == "" {
 			continue
 		}
-		f.Required = 1
 		f.Type = yapi.Text
 		// 获取中文注释
 		reDesc, _ := regexp.Compile(fmt.Sprintf("@param[^(\r\n)]+\\$%s[^(\r\n)]+", f.Name))
 		f.Desc = ""
 		if string(reDesc.Find(b)) != "" {
-			descs := strings.Split(string(reDesc.Find(b)), f.Name)
+			descs := strings.Split(string(reDesc.Find(b)), "$"+f.Name)
 			if len(descs) == 2 {
-				f.Desc = strings.Split(string(reDesc.Find(b)), f.Name)[1]
+				f.Desc = descs[1]
 			}
 		}
 		fs = append(fs, f)

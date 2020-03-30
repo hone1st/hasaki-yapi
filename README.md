@@ -37,10 +37,15 @@ type YapiResultSet struct {
 
 ##### tp-yapi.go
 ```yaml
-scandir: D:\OneDrive\xxxx\application
-pathsuffix: .json
-filesuffix: .class.php
-controller: controller
+tp:
+  scandir: F:\OneDrive\huishi-shop\application
+  pathsuffix: .json
+  filesuffix: .class.php
+  controller: controller
+yapi:
+  token: 5af10be82269b7f3dfae11ad76f086fd0909223962ebbda6101
+  projectid: 23
+  host: http://api.example.net
 ```
 ```golang
 // 根据配置文件来扫描scandir目录
@@ -49,6 +54,7 @@ controller: controller
 // filesuffix 扫描的控制器文件的后缀
 // controller 存放控制器的目录用于定点扫描
 
+// token/projectid/host必须的配置
 // 被扫描的文件 类注释 必须带@api  不存在则忽略掉该文件 @api作为接口的分组名字
 /**
  * Class Activity

@@ -1,0 +1,3344 @@
+{
+  "web聊天模块": {
+   "/admino/WebActivity/activityInfo.json": {
+    "id": 0,
+    "title": "活动详情",
+    "path": "/admino/WebActivity/activityInfo.json",
+    "catid": 1934,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 活动详情\r\n     * @param $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function activityInfo($id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 活动详情\r\n     * @param $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function activityInfo($id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/WebActivity/activityList.json": {
+    "id": 0,
+    "title": "活动列表 主播和客服",
+    "path": "/admino/WebActivity/activityList.json",
+    "catid": 1934,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 活动列表 主播和客服\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function activityList($page = 1, $limit = 10)",
+    "markdown": "\r\n\r\n    /**\r\n     * 活动列表 主播和客服\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function activityList($page = 1, $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/WebActivity/loginOut.json": {
+    "id": 0,
+    "title": "退出登录",
+    "path": "/admino/WebActivity/loginOut.json",
+    "catid": 1934,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 退出登录\r\n     */\r\n    public function loginOut()",
+    "markdown": "\r\n\r\n    /**\r\n     * 退出登录\r\n     */\r\n    public function loginOut()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "上传工具类": {
+   "/admino/Upload/txFile.json": {
+    "id": 0,
+    "title": "上传文件通过腾讯云 无需对接",
+    "path": "/admino/Upload/txFile.json",
+    "catid": 1742,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     *\r\n     * 上传文件通过腾讯云 无需对接\r\n     * @param string $path\r\n     */\r\n    public function txFile($path = '')",
+    "markdown": "\r\n\r\n    /**\r\n     *\r\n     * 上传文件通过腾讯云 无需对接\r\n     * @param string $path\r\n     */\r\n    public function txFile($path = '')",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "path",
+      "type": "text",
+      "example": "''",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Upload/uploadEditor.json": {
+    "id": 0,
+    "title": "编辑器上传接口",
+    "path": "/admino/Upload/uploadEditor.json",
+    "catid": 1742,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 编辑器上传接口\r\n     * @throws Exception\r\n     */\r\n    public function uploadEditor()",
+    "markdown": "\r\n\r\n    /**\r\n     * 编辑器上传接口\r\n     * @throws Exception\r\n     */\r\n    public function uploadEditor()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Upload/uploadFile.json": {
+    "id": 0,
+    "title": "上传文件",
+    "path": "/admino/Upload/uploadFile.json",
+    "catid": 1742,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 上传文件\r\n     * @param string $name\r\n     */\r\n    public function uploadFile($name=\"image\")",
+    "markdown": "\r\n\r\n    /**\r\n     * 上传文件\r\n     * @param string $name\r\n     */\r\n    public function uploadFile($name=\"image\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "name",
+      "type": "text",
+      "example": "\"image\"",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Upload/uploadToCos.json": {
+    "id": 0,
+    "title": "上次文件",
+    "path": "/admino/Upload/uploadToCos.json",
+    "catid": 1742,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 上次文件\r\n     * @param string $tag 区分不同的上传到cos同的文件夹下例如vedio视频文件夹\r\n     * @throws Exception\r\n     */\r\n    public function uploadToCos(string $tag)",
+    "markdown": "\r\n\r\n    /**\r\n     * 上次文件\r\n     * @param string $tag 区分不同的上传到cos同的文件夹下例如vedio视频文件夹\r\n     * @throws Exception\r\n     */\r\n    public function uploadToCos(string $tag)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "tag",
+      "type": "text",
+      "example": "",
+      "desc": " 区分不同的上传到cos同的文件夹下例如vedio视频文件夹"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "前台的活动的模块": {
+   "/home/Activity/activityDetail.json": {
+    "id": 0,
+    "title": "获取某个活动信息以及商品列表",
+    "path": "/home/Activity/activityDetail.json",
+    "catid": 2310,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取某个活动信息以及商品列表\r\n     * /home/Activity/activityDetail.json\r\n     * @param int $id 活动的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws Exception\r\n     */\r\n    public function activityDetail(int $id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取某个活动信息以及商品列表\r\n     * /home/Activity/activityDetail.json\r\n     * @param int $id 活动的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws Exception\r\n     */\r\n    public function activityDetail(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Activity/activityPayNotify.json": {
+    "id": 0,
+    "title": "活动商品下单后的支付回调接口 不需要对接",
+    "path": "/home/Activity/activityPayNotify.json",
+    "catid": 2310,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 活动商品下单后的支付回调接口 不需要对接\r\n     * /home/Activity/activityPayNotify.json\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\Exception\r\n     */\r\n    public function activityPayNotify()",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 活动商品下单后的支付回调接口 不需要对接\r\n     * /home/Activity/activityPayNotify.json\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\Exception\r\n     */\r\n    public function activityPayNotify()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Activity/orderBuy.json": {
+    "id": 0,
+    "title": "下单",
+    "path": "/home/Activity/orderBuy.json",
+    "catid": 2310,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 下单\r\n     * /home/Activity/orderBuy.json\r\n     * @param int $share_type 共享类型\r\n     * @param int $activity_id 活动id\r\n     * @param int $activity_shop_id 活动商品id\r\n     * @param int $activity_shop_attr_id 活动商品规格id\r\n     * @param int $count 下单数量\r\n     * @param string $name 收货人\r\n     * @param string $address 收货地址\r\n     * @param string $phone 收获人电话\r\n     * @param string $city 收货人城市\r\n     * @param string $province 省份\r\n     * @param string $district 区县\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\GuzzleHttp\\Exception\\GuzzleException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     * @throws Exception\r\n     */\r\n    public function orderBuy(int $share_type, int $activity_id, int $activity_shop_id, int $activity_shop_attr_id, int $count, string $name, string $address, string $phone, string $city, string $province, string $district)",
+    "markdown": "\r\n\r\n    /**\r\n     * 下单\r\n     * /home/Activity/orderBuy.json\r\n     * @param int $share_type 共享类型\r\n     * @param int $activity_id 活动id\r\n     * @param int $activity_shop_id 活动商品id\r\n     * @param int $activity_shop_attr_id 活动商品规格id\r\n     * @param int $count 下单数量\r\n     * @param string $name 收货人\r\n     * @param string $address 收货地址\r\n     * @param string $phone 收获人电话\r\n     * @param string $city 收货人城市\r\n     * @param string $province 省份\r\n     * @param string $district 区县\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\GuzzleHttp\\Exception\\GuzzleException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     * @throws Exception\r\n     */\r\n    public function orderBuy(int $share_type, int $activity_id, int $activity_shop_id, int $activity_shop_attr_id, int $count, string $name, string $address, string $phone, string $city, string $province, string $district)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "share_type",
+      "type": "text",
+      "example": "",
+      "desc": " 共享类型"
+     },
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动id"
+     },
+     {
+      "required": 1,
+      "name": "activity_shop_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动商品id"
+     },
+     {
+      "required": 1,
+      "name": "activity_shop_attr_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动商品规格id"
+     },
+     {
+      "required": 1,
+      "name": "count",
+      "type": "text",
+      "example": "",
+      "desc": " 下单数量"
+     },
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 收货人"
+     },
+     {
+      "required": 1,
+      "name": "address",
+      "type": "text",
+      "example": "",
+      "desc": " 收货地址"
+     },
+     {
+      "required": 1,
+      "name": "phone",
+      "type": "text",
+      "example": "",
+      "desc": " 收获人电话"
+     },
+     {
+      "required": 1,
+      "name": "city",
+      "type": "text",
+      "example": "",
+      "desc": " 收货人城市"
+     },
+     {
+      "required": 1,
+      "name": "province",
+      "type": "text",
+      "example": "",
+      "desc": " 省份"
+     },
+     {
+      "required": 1,
+      "name": "district",
+      "type": "text",
+      "example": "",
+      "desc": " 区县"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Activity/wxPay.json": {
+    "id": 0,
+    "title": "立即支付",
+    "path": "/home/Activity/wxPay.json",
+    "catid": 2310,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 立即支付\r\n     * @param int $order_id 订单id\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\GuzzleHttp\\Exception\\GuzzleException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function wxPay(int $order_id)",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 立即支付\r\n     * @param int $order_id 订单id\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\GuzzleHttp\\Exception\\GuzzleException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function wxPay(int $order_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "order_id",
+      "type": "text",
+      "example": "",
+      "desc": " 订单id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "前端用户扫码": {
+   "/home/Wechat/bindingActivity.json": {
+    "id": 0,
+    "title": "绑定主播",
+    "path": "/home/Wechat/bindingActivity.json",
+    "catid": 1838,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 绑定主播\r\n     * @param $activity_id\r\n     * @param $code\r\n     * @throws InvalidConfigException\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function bindingActivity($activity_id, $code)",
+    "markdown": "\r\n\r\n    /**\r\n     * 绑定主播\r\n     * @param $activity_id\r\n     * @param $code\r\n     * @throws InvalidConfigException\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function bindingActivity($activity_id, $code)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "code",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Wechat/bindingLogin.json": {
+    "id": 0,
+    "title": "后台登录聊天室",
+    "path": "/home/Wechat/bindingLogin.json",
+    "catid": 1838,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 后台登录聊天室\r\n     * @param $uid\r\n     * @param $code\r\n     * @throws InvalidConfigException\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function bindingLogin($uid, $code)",
+    "markdown": "\r\n\r\n    /**\r\n     * 后台登录聊天室\r\n     * @param $uid\r\n     * @param $code\r\n     * @throws InvalidConfigException\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function bindingLogin($uid, $code)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "uid",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "code",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Wechat/bindingUser.json": {
+    "id": 0,
+    "title": "绑定用户",
+    "path": "/home/Wechat/bindingUser.json",
+    "catid": 1838,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 绑定用户\r\n     * @param $admin_id\r\n     * @param $code\r\n     * @throws InvalidConfigException\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function bindingUser($admin_id, $code)",
+    "markdown": "\r\n\r\n    /**\r\n     * 绑定用户\r\n     * @param $admin_id\r\n     * @param $code\r\n     * @throws InvalidConfigException\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function bindingUser($admin_id, $code)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "admin_id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "code",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台商品模块": {
+   "/admino/ActivityShop/activityShopInfo.json": {
+    "id": 0,
+    "title": "商品详情",
+    "path": "/admino/ActivityShop/activityShopInfo.json",
+    "catid": 1758,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 商品详情\r\n     * @param $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function activityShopInfo($id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 商品详情\r\n     * @param $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function activityShopInfo($id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/ActivityShop/activityShopList.json": {
+    "id": 0,
+    "title": "活动商品列表",
+    "path": "/admino/ActivityShop/activityShopList.json",
+    "catid": 1758,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 活动商品列表\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function activityShopList($page = 1, $limit = 10)",
+    "markdown": "\r\n\r\n    /**\r\n     * 活动商品列表\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function activityShopList($page = 1, $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/ActivityShop/editActivityShop.json": {
+    "id": 0,
+    "title": "保存添加商品",
+    "path": "/admino/ActivityShop/editActivityShop.json",
+    "catid": 1758,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 保存添加商品\r\n     * @param string $id\r\n     * @param $name 商品名字\r\n     * @param $detail\r\n     * @param $desc 商品描述\r\n     * @param $image  商品图片\r\n     * @param array $banner_image 轮播图 eg:banner_image[0]=\"pg\" banner_image[1]=\"qa\"\r\n     * @param array $attr_info\r\n     * @param $shadow_buy_num\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function editActivityShop($id = '', $name, $detail, $desc, $image, $banner_image = [], $attr_info = [],$shadow_buy_num)",
+    "markdown": "\r\n\r\n    /**\r\n     * 保存添加商品\r\n     * @param string $id\r\n     * @param $name 商品名字\r\n     * @param $detail\r\n     * @param $desc 商品描述\r\n     * @param $image  商品图片\r\n     * @param array $banner_image 轮播图 eg:banner_image[0]=\"pg\" banner_image[1]=\"qa\"\r\n     * @param array $attr_info\r\n     * @param $shadow_buy_num\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function editActivityShop($id = '', $name, $detail, $desc, $image, $banner_image = [], $attr_info = [],$shadow_buy_num)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "id",
+      "type": "text",
+      "example": "''",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 商品名字"
+     },
+     {
+      "required": 1,
+      "name": "detail",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "desc",
+      "type": "text",
+      "example": "",
+      "desc": " 商品描述"
+     },
+     {
+      "required": 1,
+      "name": "image",
+      "type": "text",
+      "example": "",
+      "desc": "  商品图片"
+     },
+     {
+      "required": 0,
+      "name": "banner_image",
+      "type": "text",
+      "example": "[]",
+      "desc": " 轮播图 eg:banner_image[0]=\"pg\" banner_image[1]=\"qa\""
+     },
+     {
+      "required": 0,
+      "name": "attr_info",
+      "type": "text",
+      "example": "[]",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "shadow_buy_num",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/ActivityShop/getNewGifBagInfo.json": {
+    "id": 0,
+    "title": "新人大礼包详情",
+    "path": "/admino/ActivityShop/getNewGifBagInfo.json",
+    "catid": 1758,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 新人大礼包详情\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getNewGifBagInfo()",
+    "markdown": "\r\n\r\n    /**\r\n     * 新人大礼包详情\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getNewGifBagInfo()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/ActivityShop/saveNewGiftBag.json": {
+    "id": 0,
+    "title": "保存新人大礼包",
+    "path": "/admino/ActivityShop/saveNewGiftBag.json",
+    "catid": 1758,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 保存新人大礼包\r\n     * @param $name 商品名字\r\n     * @param $desc 商品描述\r\n     * @param $image\r\n     * @param array $banner_image 轮播图 eg:banner_image[0]=\"pg\" banner_image[1]=\"qa\"\r\n     * @param array $attr_info\r\n     * @param $detail\r\n     * @param $shadow_buy_num\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function saveNewGiftBag($name, $desc, $image, $banner_image = [], $attr_info = [],$detail,$shadow_buy_num=\"\")",
+    "markdown": "\r\n\r\n    /**\r\n     * 保存新人大礼包\r\n     * @param $name 商品名字\r\n     * @param $desc 商品描述\r\n     * @param $image\r\n     * @param array $banner_image 轮播图 eg:banner_image[0]=\"pg\" banner_image[1]=\"qa\"\r\n     * @param array $attr_info\r\n     * @param $detail\r\n     * @param $shadow_buy_num\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function saveNewGiftBag($name, $desc, $image, $banner_image = [], $attr_info = [],$detail,$shadow_buy_num=\"\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 商品名字"
+     },
+     {
+      "required": 1,
+      "name": "desc",
+      "type": "text",
+      "example": "",
+      "desc": " 商品描述"
+     },
+     {
+      "required": 1,
+      "name": "image",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "banner_image",
+      "type": "text",
+      "example": "[]",
+      "desc": " 轮播图 eg:banner_image[0]=\"pg\" banner_image[1]=\"qa\""
+     },
+     {
+      "required": 0,
+      "name": "attr_info",
+      "type": "text",
+      "example": "[]",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "detail",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "shadow_buy_num",
+      "type": "text",
+      "example": "\"\"",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台活动模块": {
+   "/admino/Activity/activityDown.json": {
+    "id": 0,
+    "title": "上下架活动",
+    "path": "/admino/Activity/activityDown.json",
+    "catid": 1750,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 上下架活动\r\n     * @param $id\r\n     * @param $status\r\n     */\r\n    public function activityDown($id, $status)",
+    "markdown": "\r\n\r\n    /**\r\n     * 上下架活动\r\n     * @param $id\r\n     * @param $status\r\n     */\r\n    public function activityDown($id, $status)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "status",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Activity/activityInfo.json": {
+    "id": 0,
+    "title": "活动详情",
+    "path": "/admino/Activity/activityInfo.json",
+    "catid": 1750,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 活动详情\r\n     * /admino/Activity/activityInfo.json\r\n     * @param int $id 活动表的id\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function activityInfo($id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 活动详情\r\n     * /admino/Activity/activityInfo.json\r\n     * @param int $id 活动表的id\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function activityInfo($id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动表的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Activity/activityList.json": {
+    "id": 0,
+    "title": "活动列表带筛选",
+    "path": "/admino/Activity/activityList.json",
+    "catid": 1750,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 活动列表带筛选\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @param string $state 未开始 已结束 进行中\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function activityList($page = 1, $limit = 10, $state = \"\")",
+    "markdown": "\r\n\r\n    /**\r\n     * 活动列表带筛选\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @param string $state 未开始 已结束 进行中\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function activityList($page = 1, $limit = 10, $state = \"\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "state",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 未开始 已结束 进行中"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Activity/editActivity.json": {
+    "id": 0,
+    "title": "添加编辑 保存上下架活动",
+    "path": "/admino/Activity/editActivity.json",
+    "catid": 1750,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 添加编辑 保存上下架活动\r\n     * /admino/Activity/editActivity.json\r\n     * @param string $name 活动的名称\r\n     * @param string $activity_type 活动类型0小直播间\r\n     * @param string $desc 活动的描述！\r\n     * @param string $end_time 活动结束时间\r\n     * @param string $start_time 活动开始时间\r\n     * @param string $video 活动视频的地址\r\n     * @param string $mt_image 活动的门头照片\r\n     * @param string $desc_image 活动的介绍照片\r\n     * @param array $shops 商品共享列表\r\n     * @param array $no_share 不共享\r\n     * @param array $share 共享\r\n     * @param array $ppt_images ppt 图片数组\r\n     * @param string $status 0下架，1上架\r\n     * @param string $video_image 活动视频封面图片的地址\r\n     * @param string $act_hb 活动的海报地址\r\n     * @param string $act_share 活动的分享文案\r\n     * @param int $online_people 在线人数\r\n     * @param string $notice 公告\r\n     * @param int $id 主键id\r\n     * @param string $video_time 视频时长\r\n     * @param string $video_over_img 视屏播放结束封面图\r\n     * @param array $common_language 常用语\r\n     * shops:[ {activity_shop_attr_item:[{stock:,activity_shop_attr_id:}],activity_shop_id: } ]\r\n     * no_share:[ {admin_id:,store_shop_item:[{activity_shop_id:,shipping_type:,activity_shop_attr_item:[{stock:,activity_shop_attr_id:}]}] } ]\r\n     * share:[ {admin_id\":,store_shop_item:[{activity_shop_id:,shipping_type:,activity_shop_attr_item:[{activity_shop_attr_id:}]}] } ]\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function editActivity(\r\n        $name, $activity_type, $desc, $end_time, $start_time,\r\n        $video, $mt_image, $desc_image, array $shops,\r\n        array $no_share,\r\n        array $share,\r\n        array $ppt_images,\r\n        $status, $video_image, $act_hb, $act_share, $online_people = 0,\r\n        $notice = \"\",\r\n        int $id = 0\r\n        , $video_time = \"\", $video_over_img = \"\",\r\n        array $common_language = []\r\n    )",
+    "markdown": "\r\n\r\n    /**\r\n     * 添加编辑 保存上下架活动\r\n     * /admino/Activity/editActivity.json\r\n     * @param string $name 活动的名称\r\n     * @param string $activity_type 活动类型0小直播间\r\n     * @param string $desc 活动的描述！\r\n     * @param string $end_time 活动结束时间\r\n     * @param string $start_time 活动开始时间\r\n     * @param string $video 活动视频的地址\r\n     * @param string $mt_image 活动的门头照片\r\n     * @param string $desc_image 活动的介绍照片\r\n     * @param array $shops 商品共享列表\r\n     * @param array $no_share 不共享\r\n     * @param array $share 共享\r\n     * @param array $ppt_images ppt 图片数组\r\n     * @param string $status 0下架，1上架\r\n     * @param string $video_image 活动视频封面图片的地址\r\n     * @param string $act_hb 活动的海报地址\r\n     * @param string $act_share 活动的分享文案\r\n     * @param int $online_people 在线人数\r\n     * @param string $notice 公告\r\n     * @param int $id 主键id\r\n     * @param string $video_time 视频时长\r\n     * @param string $video_over_img 视屏播放结束封面图\r\n     * @param array $common_language 常用语\r\n     * shops:[ {activity_shop_attr_item:[{stock:,activity_shop_attr_id:}],activity_shop_id: } ]\r\n     * no_share:[ {admin_id:,store_shop_item:[{activity_shop_id:,shipping_type:,activity_shop_attr_item:[{stock:,activity_shop_attr_id:}]}] } ]\r\n     * share:[ {admin_id\":,store_shop_item:[{activity_shop_id:,shipping_type:,activity_shop_attr_item:[{activity_shop_attr_id:}]}] } ]\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function editActivity(\r\n        $name, $activity_type, $desc, $end_time, $start_time,\r\n        $video, $mt_image, $desc_image, array $shops,\r\n        array $no_share,\r\n        array $share,\r\n        array $ppt_images,\r\n        $status, $video_image, $act_hb, $act_share, $online_people = 0,\r\n        $notice = \"\",\r\n        int $id = 0\r\n        , $video_time = \"\", $video_over_img = \"\",\r\n        array $common_language = []\r\n    )",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的名称"
+     },
+     {
+      "required": 1,
+      "name": "activity_type",
+      "type": "text",
+      "example": "",
+      "desc": " 活动类型0小直播间"
+     },
+     {
+      "required": 1,
+      "name": "desc",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的描述！"
+     },
+     {
+      "required": 1,
+      "name": "end_time",
+      "type": "text",
+      "example": "",
+      "desc": " 活动结束时间"
+     },
+     {
+      "required": 1,
+      "name": "start_time",
+      "type": "text",
+      "example": "",
+      "desc": " 活动开始时间"
+     },
+     {
+      "required": 1,
+      "name": "video",
+      "type": "text",
+      "example": "",
+      "desc": " 活动视频的地址"
+     },
+     {
+      "required": 1,
+      "name": "mt_image",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的门头照片"
+     },
+     {
+      "required": 1,
+      "name": "desc_image",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的介绍照片"
+     },
+     {
+      "required": 1,
+      "name": "shops",
+      "type": "text",
+      "example": "",
+      "desc": " 商品共享列表"
+     },
+     {
+      "required": 1,
+      "name": "no_share",
+      "type": "text",
+      "example": "",
+      "desc": " 不共享"
+     },
+     {
+      "required": 1,
+      "name": "share",
+      "type": "text",
+      "example": "",
+      "desc": " 共享"
+     },
+     {
+      "required": 1,
+      "name": "ppt_images",
+      "type": "text",
+      "example": "",
+      "desc": " ppt 图片数组"
+     },
+     {
+      "required": 1,
+      "name": "status",
+      "type": "text",
+      "example": "",
+      "desc": " 0下架，1上架"
+     },
+     {
+      "required": 1,
+      "name": "video_image",
+      "type": "text",
+      "example": "",
+      "desc": " 活动视频封面图片的地址"
+     },
+     {
+      "required": 1,
+      "name": "act_hb",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的海报地址"
+     },
+     {
+      "required": 1,
+      "name": "act_share",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的分享文案"
+     },
+     {
+      "required": 0,
+      "name": "online_people",
+      "type": "text",
+      "example": "0",
+      "desc": " 在线人数"
+     },
+     {
+      "required": 0,
+      "name": "notice",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 公告"
+     },
+     {
+      "required": 0,
+      "name": "id",
+      "type": "text",
+      "example": "0",
+      "desc": " 主键id"
+     },
+     {
+      "required": 0,
+      "name": "video_time",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 视频时长"
+     },
+     {
+      "required": 0,
+      "name": "video_over_img",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 视屏播放结束封面图"
+     },
+     {
+      "required": 0,
+      "name": "common_language",
+      "type": "text",
+      "example": "[]",
+      "desc": " 常用语"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Activity/reserveList.json": {
+    "id": 0,
+    "title": "后台预约用户列表",
+    "path": "/admino/Activity/reserveList.json",
+    "catid": 1750,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 后台预约用户列表\r\n     * @param $activity_id\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @throws DataNotFoundException\r\n     * @throws DbException\r\n     * @throws ModelNotFoundException\r\n     */\r\n    public function reserveList($activity_id, $page = 1, $limit = 10)",
+    "markdown": "\r\n\r\n    /**\r\n     * 后台预约用户列表\r\n     * @param $activity_id\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @throws DataNotFoundException\r\n     * @throws DbException\r\n     * @throws ModelNotFoundException\r\n     */\r\n    public function reserveList($activity_id, $page = 1, $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Activity/unBind.json": {
+    "id": 0,
+    "title": "解绑",
+    "path": "/admino/Activity/unBind.json",
+    "catid": 1750,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 解绑\r\n     * @param $id\r\n     * @throws DataNotFoundException\r\n     * @throws DbException\r\n     * @throws ModelNotFoundException\r\n     */\r\n    public function unBind($id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 解绑\r\n     * @param $id\r\n     * @throws DataNotFoundException\r\n     * @throws DbException\r\n     * @throws ModelNotFoundException\r\n     */\r\n    public function unBind($id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台用户模块": {
+   "/admino/User/addConfig.json": {
+    "id": 0,
+    "title": "添加配置",
+    "path": "/admino/User/addConfig.json",
+    "catid": 1822,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 添加配置\r\n     */\r\n    public function addConfig($version)",
+    "markdown": "\r\n\r\n    /**\r\n     * 添加配置\r\n     */\r\n    public function addConfig($version)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "version",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/User/appConfigList.json": {
+    "id": 0,
+    "title": "配置列表",
+    "path": "/admino/User/appConfigList.json",
+    "catid": 1822,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 配置列表\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function appConfigList($page = 1, $limit = 10)",
+    "markdown": "\r\n\r\n    /**\r\n     * 配置列表\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function appConfigList($page = 1, $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/User/exportUserData.json": {
+    "id": 0,
+    "title": "导出用户的数据",
+    "path": "/admino/User/exportUserData.json",
+    "catid": 1822,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 导出用户的数据\r\n     * /admino/user/exportUserData.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function exportUserData()",
+    "markdown": "\r\n\r\n    /**\r\n     * 导出用户的数据\r\n     * /admino/user/exportUserData.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function exportUserData()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/User/exportYyData.json": {
+    "id": 0,
+    "title": "导出数据",
+    "path": "/admino/User/exportYyData.json",
+    "catid": 1822,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 导出数据\r\n     * /admino/user/exportYyData.json\r\n     */\r\n    public function exportYyData()",
+    "markdown": "\r\n\r\n    /**\r\n     * 导出数据\r\n     * /admino/user/exportYyData.json\r\n     */\r\n    public function exportYyData()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/User/getVersionList.json": {
+    "id": 0,
+    "title": "根据版本号获取数据",
+    "path": "/admino/User/getVersionList.json",
+    "catid": 1822,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 根据版本号获取数据\r\n     * @param $version\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getVersionList($version)",
+    "markdown": "\r\n\r\n    /**\r\n     * 根据版本号获取数据\r\n     * @param $version\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getVersionList($version)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "version",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/User/setConfig.json": {
+    "id": 0,
+    "title": "小程序审核设置",
+    "path": "/admino/User/setConfig.json",
+    "catid": 1822,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 小程序审核设置\r\n     * @param $id\r\n     * @param $is_open\r\n     */\r\n    public function setConfig($id, $is_open)",
+    "markdown": "\r\n\r\n    /**\r\n     * 小程序审核设置\r\n     * @param $id\r\n     * @param $is_open\r\n     */\r\n    public function setConfig($id, $is_open)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "is_open",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台登录模块": {
+   "/admino/Login/changePassword.json": {
+    "id": 0,
+    "title": "更改密码",
+    "path": "/admino/Login/changePassword.json",
+    "catid": 1734,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 更改密码\r\n     * @param $password\r\n     */\r\n    public function changePassword($password)",
+    "markdown": "\r\n\r\n    /**\r\n     * 更改密码\r\n     * @param $password\r\n     */\r\n    public function changePassword($password)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "password",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Login/getLoginQrcode.json": {
+    "id": 0,
+    "title": "获取二维码",
+    "path": "/admino/Login/getLoginQrcode.json",
+    "catid": 1734,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取二维码\r\n     * @param $type 0客服，1活动\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\RuntimeException\r\n     */\r\n    public function getLoginQrcode($type)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取二维码\r\n     * @param $type 0客服，1活动\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\RuntimeException\r\n     */\r\n    public function getLoginQrcode($type)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "type",
+      "type": "text",
+      "example": "",
+      "desc": " 0客服，1活动"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Login/getMenu.json": {
+    "id": 0,
+    "title": "根据用户类型拿菜单",
+    "path": "/admino/Login/getMenu.json",
+    "catid": 1734,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 根据用户类型拿菜单\r\n     */\r\n    public function getMenu()",
+    "markdown": "\r\n\r\n    /**\r\n     * 根据用户类型拿菜单\r\n     */\r\n    public function getMenu()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Login/getUserInfo.json": {
+    "id": 0,
+    "title": "轮循用户信息",
+    "path": "/admino/Login/getUserInfo.json",
+    "catid": 1734,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 轮循用户信息\r\n     * @param $uid\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getUserInfo($uid)",
+    "markdown": "\r\n\r\n    /**\r\n     * 轮循用户信息\r\n     * @param $uid\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getUserInfo($uid)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "uid",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Login/login.json": {
+    "id": 0,
+    "title": "后台登录接口",
+    "path": "/admino/Login/login.json",
+    "catid": 1734,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 后台登录接口\r\n     * @param string $username 用户名\r\n     * @param string $password 密码\r\n     */\r\n    public function login($username, $password)",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 后台登录接口\r\n     * @param string $username 用户名\r\n     * @param string $password 密码\r\n     */\r\n    public function login($username, $password)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "username",
+      "type": "text",
+      "example": "",
+      "desc": " 用户名"
+     },
+     {
+      "required": 1,
+      "name": "password",
+      "type": "text",
+      "example": "",
+      "desc": " 密码"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台订单模块": {
+   "/admino/Order/changeOrderStatus.json": {
+    "id": 0,
+    "title": "发货更改订单状态",
+    "path": "/admino/Order/changeOrderStatus.json",
+    "catid": 1766,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 发货更改订单状态\r\n     * @param $id\r\n     * @param $status 状态\r\n     * @param string $express_order 快递单号\r\n     * @param string $shipping_name 快递名字\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function changeOrderStatus($id, $status, $express_order = \"\", $shipping_name = \"\")",
+    "markdown": "\r\n\r\n    /**\r\n     * 发货更改订单状态\r\n     * @param $id\r\n     * @param $status 状态\r\n     * @param string $express_order 快递单号\r\n     * @param string $shipping_name 快递名字\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function changeOrderStatus($id, $status, $express_order = \"\", $shipping_name = \"\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "status",
+      "type": "text",
+      "example": "",
+      "desc": " 状态"
+     },
+     {
+      "required": 0,
+      "name": "express_order",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 快递单号"
+     },
+     {
+      "required": 0,
+      "name": "shipping_name",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 快递名字"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Order/getSaveKey.json": {
+    "id": 0,
+    "title": "读取系统设置",
+    "path": "/admino/Order/getSaveKey.json",
+    "catid": 1766,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 读取系统设置\r\n     * @param $key\r\n     */\r\n    public function getSaveKey()",
+    "markdown": "\r\n\r\n    /**\r\n     * 读取系统设置\r\n     * @param $key\r\n     */\r\n    public function getSaveKey()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Order/orderInfo.json": {
+    "id": 0,
+    "title": "订单详情接口",
+    "path": "/admino/Order/orderInfo.json",
+    "catid": 1766,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 订单详情接口\r\n     * @param $id\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function orderInfo($id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 订单详情接口\r\n     * @param $id\r\n     * @throws DataNotFoundException\r\n     * @throws ModelNotFoundException\r\n     * @throws DbException\r\n     */\r\n    public function orderInfo($id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Order/orderList.json": {
+    "id": 0,
+    "title": "订单列表接口",
+    "path": "/admino/Order/orderList.json",
+    "catid": 1766,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 订单列表接口\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @param string $status\r\n     * @param string $key_word\r\n     * @throws DataNotFoundException\r\n     * @throws DbException\r\n     * @throws ModelNotFoundException\r\n     */\r\n    public function orderList($page = 1, $limit = 10, $status = \"\", $key_word = \"\", $shipping_name = \"\")",
+    "markdown": "\r\n\r\n    /**\r\n     * 订单列表接口\r\n     * @param int $page\r\n     * @param int $limit\r\n     * @param string $status\r\n     * @param string $key_word\r\n     * @throws DataNotFoundException\r\n     * @throws DbException\r\n     * @throws ModelNotFoundException\r\n     */\r\n    public function orderList($page = 1, $limit = 10, $status = \"\", $key_word = \"\", $shipping_name = \"\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "status",
+      "type": "text",
+      "example": "\"\"",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "key_word",
+      "type": "text",
+      "example": "\"\"",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "shipping_name",
+      "type": "text",
+      "example": "\"\"",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Order/setSaveKey.json": {
+    "id": 0,
+    "title": "修改系统设置",
+    "path": "/admino/Order/setSaveKey.json",
+    "catid": 1766,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 修改系统设置\r\n     * @param $msg_setting\r\n     */\r\n    public function setSaveKey($msg_setting)",
+    "markdown": "\r\n\r\n    /**\r\n     * 修改系统设置\r\n     * @param $msg_setting\r\n     */\r\n    public function setSaveKey($msg_setting)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "msg_setting",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台门店列表": {
+   "/admino/Admin/editStore.json": {
+    "id": 0,
+    "title": "添加修改门店信息",
+    "path": "/admino/Admin/editStore.json",
+    "catid": 1726,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 添加修改门店信息\r\n     * @param string $id\r\n     * @param $api_key 特约商户api密钥\r\n     * @param string $city\r\n     * @param string $sub_mch_id 特约商户号\r\n     * @param $image\r\n     * @param $name 门店名称\r\n     * @param $phone 负责人电话\r\n     * @param $number 门店编号\r\n     * @param $address 地址\r\n     * @param $owner 门店负责人\r\n     * @param $certificate 营业执照图片地址\r\n     * @param $card_z 身份证正面地址\r\n     * @param $card_f 身份证反面地址\r\n     * @param $kf_phone ⻔店客服电话\r\n     * @param string $refuse_phone 门店退货联系电话\r\n     * @param $refuse_address 门店退货地址\r\n     * @param $refuse_member 门店退货联系人\r\n     * @param string $apiclient_cert 微信支付证书商户apiclient_cert\r\n     * @param string $apiclient_key 微信支付密钥apiclient_key\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\RuntimeException\r\n     */\r\n    public function editStore($id = \"\", $api_key, $city = \"\", $sub_mch_id = \"\", $image,$name, $phone, $number, $address, $owner, $certificate, $card_z, $card_f, $kf_phone, $refuse_phone, $refuse_address, $refuse_member, $apiclient_cert = \"\", $apiclient_key = \"\")",
+    "markdown": "\r\n\r\n    /**\r\n     * 添加修改门店信息\r\n     * @param string $id\r\n     * @param $api_key 特约商户api密钥\r\n     * @param string $city\r\n     * @param string $sub_mch_id 特约商户号\r\n     * @param $image\r\n     * @param $name 门店名称\r\n     * @param $phone 负责人电话\r\n     * @param $number 门店编号\r\n     * @param $address 地址\r\n     * @param $owner 门店负责人\r\n     * @param $certificate 营业执照图片地址\r\n     * @param $card_z 身份证正面地址\r\n     * @param $card_f 身份证反面地址\r\n     * @param $kf_phone ⻔店客服电话\r\n     * @param string $refuse_phone 门店退货联系电话\r\n     * @param $refuse_address 门店退货地址\r\n     * @param $refuse_member 门店退货联系人\r\n     * @param string $apiclient_cert 微信支付证书商户apiclient_cert\r\n     * @param string $apiclient_key 微信支付密钥apiclient_key\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\RuntimeException\r\n     */\r\n    public function editStore($id = \"\", $api_key, $city = \"\", $sub_mch_id = \"\", $image,$name, $phone, $number, $address, $owner, $certificate, $card_z, $card_f, $kf_phone, $refuse_phone, $refuse_address, $refuse_member, $apiclient_cert = \"\", $apiclient_key = \"\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "id",
+      "type": "text",
+      "example": "\"\"",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "api_key",
+      "type": "text",
+      "example": "",
+      "desc": " 特约商户api密钥"
+     },
+     {
+      "required": 0,
+      "name": "city",
+      "type": "text",
+      "example": "\"\"",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "sub_mch_id",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 特约商户号"
+     },
+     {
+      "required": 1,
+      "name": "image",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 门店名称"
+     },
+     {
+      "required": 1,
+      "name": "phone",
+      "type": "text",
+      "example": "",
+      "desc": " 负责人电话"
+     },
+     {
+      "required": 1,
+      "name": "number",
+      "type": "text",
+      "example": "",
+      "desc": " 门店编号"
+     },
+     {
+      "required": 1,
+      "name": "address",
+      "type": "text",
+      "example": "",
+      "desc": " 地址"
+     },
+     {
+      "required": 1,
+      "name": "owner",
+      "type": "text",
+      "example": "",
+      "desc": " 门店负责人"
+     },
+     {
+      "required": 1,
+      "name": "certificate",
+      "type": "text",
+      "example": "",
+      "desc": " 营业执照图片地址"
+     },
+     {
+      "required": 1,
+      "name": "card_z",
+      "type": "text",
+      "example": "",
+      "desc": " 身份证正面地址"
+     },
+     {
+      "required": 1,
+      "name": "card_f",
+      "type": "text",
+      "example": "",
+      "desc": " 身份证反面地址"
+     },
+     {
+      "required": 1,
+      "name": "kf_phone",
+      "type": "text",
+      "example": "",
+      "desc": " ⻔店客服电话"
+     },
+     {
+      "required": 1,
+      "name": "refuse_phone",
+      "type": "text",
+      "example": "",
+      "desc": " 门店退货联系电话"
+     },
+     {
+      "required": 1,
+      "name": "refuse_address",
+      "type": "text",
+      "example": "",
+      "desc": " 门店退货地址"
+     },
+     {
+      "required": 1,
+      "name": "refuse_member",
+      "type": "text",
+      "example": "",
+      "desc": " 门店退货联系人"
+     },
+     {
+      "required": 0,
+      "name": "apiclient_cert",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 微信支付证书商户apiclient_cert"
+     },
+     {
+      "required": 0,
+      "name": "apiclient_key",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 微信支付密钥apiclient_key"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Admin/storeInfo.json": {
+    "id": 0,
+    "title": "门店信息详情",
+    "path": "/admino/Admin/storeInfo.json",
+    "catid": 1726,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 门店信息详情\r\n     * @param $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function storeInfo($id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 门店信息详情\r\n     * @param $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function storeInfo($id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Admin/unBind.json": {
+    "id": 0,
+    "title": "解绑",
+    "path": "/admino/Admin/unBind.json",
+    "catid": 1726,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n    /**\r\n     * 解绑\r\n     * @param $id\r\n     * @throws DataNotFoundException\r\n     * @throws DbException\r\n     * @throws ModelNotFoundException\r\n     */\r\n    public function unBind($id)",
+    "markdown": "\r\n    /**\r\n     * 解绑\r\n     * @param $id\r\n     * @throws DataNotFoundException\r\n     * @throws DbException\r\n     * @throws ModelNotFoundException\r\n     */\r\n    public function unBind($id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "地址模块": {
+   "/home/Address/defaultAddress.json": {
+    "id": 0,
+    "title": "获取默认的收货地址",
+    "path": "/home/Address/defaultAddress.json",
+    "catid": 1702,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取默认的收货地址\r\n     * /home/index/defaultAddress.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function defaultAddress()",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取默认的收货地址\r\n     * /home/index/defaultAddress.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function defaultAddress()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Address/deleteAddr.json": {
+    "id": 0,
+    "title": "删除收货地址",
+    "path": "/home/Address/deleteAddr.json",
+    "catid": 1702,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 删除收货地址\r\n     * /home/index/deleteAddr.json\r\n     * @param int $id 地址id\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function deleteAddr(int $id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 删除收货地址\r\n     * /home/index/deleteAddr.json\r\n     * @param int $id 地址id\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function deleteAddr(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 地址id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Address/editAddress.json": {
+    "id": 0,
+    "title": "编辑的收货地址",
+    "path": "/home/Address/editAddress.json",
+    "catid": 1702,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 编辑的收货地址\r\n     * /home/index/editAddress.json\r\n     * @param int $id 收货地址id\r\n     * @param string $name 收货人\r\n     * @param string $phone 收货电话号码\r\n     * @param string $address 收货地址\r\n     * @param int $status 是否设置为默认\r\n     * @param string $city\r\n     * @param string $province\r\n     */\r\n    public function editAddress(int $id, string $name, string $phone, string $address, int $status, string $city, string $province,string $district)",
+    "markdown": "\r\n\r\n    /**\r\n     * 编辑的收货地址\r\n     * /home/index/editAddress.json\r\n     * @param int $id 收货地址id\r\n     * @param string $name 收货人\r\n     * @param string $phone 收货电话号码\r\n     * @param string $address 收货地址\r\n     * @param int $status 是否设置为默认\r\n     * @param string $city\r\n     * @param string $province\r\n     */\r\n    public function editAddress(int $id, string $name, string $phone, string $address, int $status, string $city, string $province,string $district)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 收货地址id"
+     },
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 收货人"
+     },
+     {
+      "required": 1,
+      "name": "phone",
+      "type": "text",
+      "example": "",
+      "desc": " 收货电话号码"
+     },
+     {
+      "required": 1,
+      "name": "address",
+      "type": "text",
+      "example": "",
+      "desc": " 收货地址"
+     },
+     {
+      "required": 1,
+      "name": "status",
+      "type": "text",
+      "example": "",
+      "desc": " 是否设置为默认"
+     },
+     {
+      "required": 1,
+      "name": "city",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "province",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "district",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Address/setDefault.json": {
+    "id": 0,
+    "title": "设置默认收货地址",
+    "path": "/home/Address/setDefault.json",
+    "catid": 1702,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 设置默认收货地址\r\n     * /home/index/setDefault.json\r\n     * @param int $id 地址id\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function setDefault(int $id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 设置默认收货地址\r\n     * /home/index/setDefault.json\r\n     * @param int $id 地址id\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function setDefault(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 地址id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "导出模块": {
+   "/home/Export/Order.json": {
+    "id": 0,
+    "title": "导出所有的订单数据",
+    "path": "/home/Export/Order.json",
+    "catid": 2318,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 导出所有的订单数据\r\n     * http://bstore.brandmax.net.cn//home/Export/Order.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function Order()",
+    "markdown": "\r\n\r\n    /**\r\n     * 导出所有的订单数据\r\n     * http://bstore.brandmax.net.cn//home/Export/Order.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function Order()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Export/User.json": {
+    "id": 0,
+    "title": "导出所有的用户数据",
+    "path": "/home/Export/User.json",
+    "catid": 2318,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 导出所有的用户数据\r\n     * http://bstore.brandmax.net.cn//home/Export/User.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function User()",
+    "markdown": "\r\n\r\n    /**\r\n     * 导出所有的用户数据\r\n     * http://bstore.brandmax.net.cn//home/Export/User.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function User()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Export/keeperStore.json": {
+    "id": 0,
+    "title": "导出所有的门店数据",
+    "path": "/home/Export/keeperStore.json",
+    "catid": 2318,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 导出所有的门店数据\r\n     * http://bstore.brandmax.net.cn//home/Export/keeperStore.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function keeperStore()",
+    "markdown": "\r\n\r\n    /**\r\n     * 导出所有的门店数据\r\n     * http://bstore.brandmax.net.cn//home/Export/keeperStore.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function keeperStore()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Export/reserve.json": {
+    "id": 0,
+    "title": "导出预约的数据",
+    "path": "/home/Export/reserve.json",
+    "catid": 2318,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 导出预约的数据\r\n     * http://bstore.brandmax.net.cn//home/Export/reserve.json?id=9\r\n     * @param int $id 活动id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function reserve(int $id = 9)",
+    "markdown": "\r\n\r\n    /**\r\n     * 导出预约的数据\r\n     * http://bstore.brandmax.net.cn//home/Export/reserve.json?id=9\r\n     * @param int $id 活动id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function reserve(int $id = 9)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "id",
+      "type": "text",
+      "example": "9",
+      "desc": " 活动id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "店铺信息": {
+   "/home/StoreKeeper/getChatStatus.json": {
+    "id": 0,
+    "title": "获取版本号",
+    "path": "/home/StoreKeeper/getChatStatus.json",
+    "catid": 1782,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 获取版本号\r\n     * @param string $version 版本号\r\n     * @param string $type 订单中心|聊一聊|边看边买\r\n     */\r\n    public function getChatStatus(string $version = \"2020-03-02\")",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 获取版本号\r\n     * @param string $version 版本号\r\n     * @param string $type 订单中心|聊一聊|边看边买\r\n     */\r\n    public function getChatStatus(string $version = \"2020-03-02\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "version",
+      "type": "text",
+      "example": "\"2020-03-02\"",
+      "desc": " 版本号"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/StoreKeeper/getChatToken.json": {
+    "id": 0,
+    "title": "获取聊天室的token",
+    "path": "/home/StoreKeeper/getChatToken.json",
+    "catid": 1782,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 获取聊天室的token\r\n     */\r\n    public function getChatToken()",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 获取聊天室的token\r\n     */\r\n    public function getChatToken()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/StoreKeeper/getNoDuty.json": {
+    "id": 0,
+    "title": "免责声明",
+    "path": "/home/StoreKeeper/getNoDuty.json",
+    "catid": 1782,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 免责声明\r\n     *  use 使用免责\r\n     *  register 注册免责\r\n     */\r\n    public function getNoDuty()",
+    "markdown": "\r\n\r\n    /**\r\n     * 免责声明\r\n     *  use 使用免责\r\n     *  register 注册免责\r\n     */\r\n    public function getNoDuty()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "活动聊天模块": {
+   "/home/ActivityChat/activityWs.json": {
+    "id": 0,
+    "title": "发送购买人数",
+    "path": "/home/ActivityChat/activityWs.json",
+    "catid": 1790,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 发送购买人数\r\n     * /home/ActivityChat/activityWs.json\r\n     */\r\n    public function activityWs()",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 发送购买人数\r\n     * /home/ActivityChat/activityWs.json\r\n     */\r\n    public function activityWs()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/ActivityChat/getChatMessage.json": {
+    "id": 0,
+    "title": "获取最近的三百条聊天历史信息",
+    "path": "/home/ActivityChat/getChatMessage.json",
+    "catid": 1790,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取最近的三百条聊天历史信息\r\n     * @param int $activity_id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getChatMessage(int $activity_id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取最近的三百条聊天历史信息\r\n     * @param int $activity_id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getChatMessage(int $activity_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/ActivityChat/playAct.json": {
+    "id": 0,
+    "title": "记录观看的动作",
+    "path": "/home/ActivityChat/playAct.json",
+    "catid": 1790,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 记录观看的动作\r\n     * @param int $activity_id 活动的id\r\n     */\r\n    public function playAct(int $activity_id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 记录观看的动作\r\n     * @param int $activity_id 活动的id\r\n     */\r\n    public function playAct(int $activity_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/ActivityChat/reserveActivity.json": {
+    "id": 0,
+    "title": "预约活动",
+    "path": "/home/ActivityChat/reserveActivity.json",
+    "catid": 1790,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 预约活动\r\n     * @param int $activity_id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function reserveActivity(int $activity_id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 预约活动\r\n     * @param int $activity_id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function reserveActivity(int $activity_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/ActivityChat/upTime.json": {
+    "id": 0,
+    "title": "点赞",
+    "path": "/home/ActivityChat/upTime.json",
+    "catid": 1790,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 点赞\r\n     * @param int $activity_id 活动的id\r\n     * @throws \\think\\Exception\r\n     */\r\n    public function upTime(int $activity_id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 点赞\r\n     * @param int $activity_id 活动的id\r\n     * @throws \\think\\Exception\r\n     */\r\n    public function upTime(int $activity_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "订单模块表": {
+   "/home/Order/activityPayNotify.json": {
+    "id": 0,
+    "title": "活动商品下单后的支付回调接口 不需要对接",
+    "path": "/home/Order/activityPayNotify.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 活动商品下单后的支付回调接口 不需要对接\r\n     * /home/order/activityPayNotify.json\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\Exception\r\n     */\r\n    public function activityPayNotify()",
+    "markdown": "\r\n\r\n    /**\r\n     * 活动商品下单后的支付回调接口 不需要对接\r\n     * /home/order/activityPayNotify.json\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\Exception\r\n     */\r\n    public function activityPayNotify()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Order/cancelOrder.json": {
+    "id": 0,
+    "title": "取消订单",
+    "path": "/home/Order/cancelOrder.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 取消订单\r\n     * /home/order/cancelOrder.json\r\n     * @param int $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function cancelOrder(int $id)",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 取消订单\r\n     * /home/order/cancelOrder.json\r\n     * @param int $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function cancelOrder(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Order/confirmOrder.json": {
+    "id": 0,
+    "title": "确认订单",
+    "path": "/home/Order/confirmOrder.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 确认订单\r\n     * /home/order/confirmOrder.json\r\n     * @param int $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function confirmOrder(int $id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 确认订单\r\n     * /home/order/confirmOrder.json\r\n     * @param int $id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function confirmOrder(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Order/editStatus.json": {
+    "id": 0,
+    "title": "测试用的 支付完成",
+    "path": "/home/Order/editStatus.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 测试用的 支付完成\r\n     * @param int $id\r\n     */\r\n    public function editStatus(int $id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 测试用的 支付完成\r\n     * @param int $id\r\n     */\r\n    public function editStatus(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Order/midActivityData.json": {
+    "id": 0,
+    "title": "获取要商品数据",
+    "path": "/home/Order/midActivityData.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 获取要商品数据\r\n     * @param int $activity_id 活动的id\r\n     * @param int $activity_shop_attr_id 规格id\r\n     * @param int $count 商品数量\r\n     * @param int $activity_shop_id 商品id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function midActivityData(int $activity_id, int $activity_shop_attr_id, int $count, int $activity_shop_id)",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 获取要商品数据\r\n     * @param int $activity_id 活动的id\r\n     * @param int $activity_shop_attr_id 规格id\r\n     * @param int $count 商品数量\r\n     * @param int $activity_shop_id 商品id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function midActivityData(int $activity_id, int $activity_shop_attr_id, int $count, int $activity_shop_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的id"
+     },
+     {
+      "required": 1,
+      "name": "activity_shop_attr_id",
+      "type": "text",
+      "example": "",
+      "desc": " 规格id"
+     },
+     {
+      "required": 1,
+      "name": "count",
+      "type": "text",
+      "example": "",
+      "desc": " 商品数量"
+     },
+     {
+      "required": 1,
+      "name": "activity_shop_id",
+      "type": "text",
+      "example": "",
+      "desc": " 商品id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Order/myOrder.json": {
+    "id": 0,
+    "title": "点击我的的api",
+    "path": "/home/Order/myOrder.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 点击我的的api\r\n     * /home/order/myOrder.json\r\n     */\r\n    public function myOrder()",
+    "markdown": "\r\n\r\n    /**\r\n     * 点击我的的api\r\n     * /home/order/myOrder.json\r\n     */\r\n    public function myOrder()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Order/orderBuy.json": {
+    "id": 0,
+    "title": "下单返回支付信息",
+    "path": "/home/Order/orderBuy.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 下单返回支付信息\r\n     * /home/order/orderBuy.json\r\n     * @param int $activity_id 活动id\r\n     * @param int $activity_shop_id 活动商品id\r\n     * @param int $activity_shop_attr_id 活动商品规格id\r\n     * @param int $count 下单数量\r\n     * @param string $name 收货人\r\n     * @param string $address 收货地址\r\n     * @param string $phone 收获人电话\r\n     * @param string $city 收货人城市\r\n     * @param string $province 省份\r\n     * @param string $district 区县\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\GuzzleHttp\\Exception\\GuzzleException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function orderBuy(int $activity_id, int $activity_shop_id, int $activity_shop_attr_id, int $count, string $name, string $address, string $phone, string $city, string $province, string $district)",
+    "markdown": "\r\n\r\n    /**\r\n     * 下单返回支付信息\r\n     * /home/order/orderBuy.json\r\n     * @param int $activity_id 活动id\r\n     * @param int $activity_shop_id 活动商品id\r\n     * @param int $activity_shop_attr_id 活动商品规格id\r\n     * @param int $count 下单数量\r\n     * @param string $name 收货人\r\n     * @param string $address 收货地址\r\n     * @param string $phone 收获人电话\r\n     * @param string $city 收货人城市\r\n     * @param string $province 省份\r\n     * @param string $district 区县\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\GuzzleHttp\\Exception\\GuzzleException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function orderBuy(int $activity_id, int $activity_shop_id, int $activity_shop_attr_id, int $count, string $name, string $address, string $phone, string $city, string $province, string $district)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动id"
+     },
+     {
+      "required": 1,
+      "name": "activity_shop_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动商品id"
+     },
+     {
+      "required": 1,
+      "name": "activity_shop_attr_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动商品规格id"
+     },
+     {
+      "required": 1,
+      "name": "count",
+      "type": "text",
+      "example": "",
+      "desc": " 下单数量"
+     },
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 收货人"
+     },
+     {
+      "required": 1,
+      "name": "address",
+      "type": "text",
+      "example": "",
+      "desc": " 收货地址"
+     },
+     {
+      "required": 1,
+      "name": "phone",
+      "type": "text",
+      "example": "",
+      "desc": " 收获人电话"
+     },
+     {
+      "required": 1,
+      "name": "city",
+      "type": "text",
+      "example": "",
+      "desc": " 收货人城市"
+     },
+     {
+      "required": 1,
+      "name": "province",
+      "type": "text",
+      "example": "",
+      "desc": " 省份"
+     },
+     {
+      "required": 1,
+      "name": "district",
+      "type": "text",
+      "example": "",
+      "desc": " 区县"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Order/orderDetail.json": {
+    "id": 0,
+    "title": "获取订单的详细数据",
+    "path": "/home/Order/orderDetail.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取订单的详细数据\r\n     * /home/order/orderDetail.json\r\n     * @param int $id 订单表的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function orderDetail(int $id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取订单的详细数据\r\n     * /home/order/orderDetail.json\r\n     * @param int $id 订单表的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function orderDetail(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 订单表的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Order/refuseOrder.json": {
+    "id": 0,
+    "title": "退款",
+    "path": "/home/Order/refuseOrder.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 退款\r\n     * /home/test/refuseOrder.json\r\n     * @param int $id 订单的id\r\n     * @param string $remark 退款原因\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function refuseOrder(int $id, string $remark = \"\")",
+    "markdown": "\r\n\r\n    /**\r\n     * 退款\r\n     * /home/test/refuseOrder.json\r\n     * @param int $id 订单的id\r\n     * @param string $remark 退款原因\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function refuseOrder(int $id, string $remark = \"\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 订单的id"
+     },
+     {
+      "required": 0,
+      "name": "remark",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 退款原因"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Order/wxPay.json": {
+    "id": 0,
+    "title": "立即支付",
+    "path": "/home/Order/wxPay.json",
+    "catid": 1718,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 立即支付\r\n     * @param int $order_id 订单id\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\GuzzleHttp\\Exception\\GuzzleException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function wxPay(int $order_id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 立即支付\r\n     * @param int $order_id 订单id\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\GuzzleHttp\\Exception\\GuzzleException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function wxPay(int $order_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "order_id",
+      "type": "text",
+      "example": "",
+      "desc": " 订单id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "首页基本功能模块": {
+   "/home/Index/activityDetail.json": {
+    "id": 0,
+    "title": "获取某个活动信息以及商品列表",
+    "path": "/home/Index/activityDetail.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取某个活动信息以及商品列表\r\n     * /home/index/activityDetail.json\r\n     * @param int $id 活动的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws Exception\r\n     */\r\n    public function activityDetail(int $id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取某个活动信息以及商品列表\r\n     * /home/index/activityDetail.json\r\n     * @param int $id 活动的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws Exception\r\n     */\r\n    public function activityDetail(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/addUser.json": {
+    "id": 0,
+    "title": "进来就要访问的",
+    "path": "/home/Index/addUser.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 进来就要访问的\r\n     * @param string $code 解密数据\r\n     * @param int $s_ocr_id 分享二维码id 默认0\r\n     * @param int $user_id 微信自带分享携带的user表的id 默认0\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function addUser(string $code, int $s_ocr_id = 0, int $user_id = 0)",
+    "markdown": "\r\n\r\n    /**\r\n     * 进来就要访问的\r\n     * @param string $code 解密数据\r\n     * @param int $s_ocr_id 分享二维码id 默认0\r\n     * @param int $user_id 微信自带分享携带的user表的id 默认0\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function addUser(string $code, int $s_ocr_id = 0, int $user_id = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "code",
+      "type": "text",
+      "example": "",
+      "desc": " 解密数据"
+     },
+     {
+      "required": 0,
+      "name": "s_ocr_id",
+      "type": "text",
+      "example": "0",
+      "desc": " 分享二维码id 默认0"
+     },
+     {
+      "required": 0,
+      "name": "user_id",
+      "type": "text",
+      "example": "0",
+      "desc": " 微信自带分享携带的user表的id 默认0"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/bindAdminId.json": {
+    "id": 0,
+    "title": "绑定门店的id",
+    "path": "/home/Index/bindAdminId.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 绑定门店的id\r\n     * @param int $admin_id 门店的id\r\n     */\r\n    public function bindAdminId(int $admin_id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 绑定门店的id\r\n     * @param int $admin_id 门店的id\r\n     */\r\n    public function bindAdminId(int $admin_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "admin_id",
+      "type": "text",
+      "example": "",
+      "desc": " 门店的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/checkAdminId.json": {
+    "id": 0,
+    "title": "检测openid和是否已经绑定了门店",
+    "path": "/home/Index/checkAdminId.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 检测openid和是否已经绑定了门店\r\n     */\r\n    public function checkAdminId()",
+    "markdown": "\r\n\r\n    /**\r\n     * 检测openid和是否已经绑定了门店\r\n     */\r\n    public function checkAdminId()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/checkRemark.json": {
+    "id": 0,
+    "title": "检测是否已经留资了",
+    "path": "/home/Index/checkRemark.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 检测是否已经留资了\r\n     */\r\n    public function checkRemark()",
+    "markdown": "\r\n\r\n    /**\r\n     * 检测是否已经留资了\r\n     */\r\n    public function checkRemark()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/getInfo.json": {
+    "id": 0,
+    "title": "获取用户信息",
+    "path": "/home/Index/getInfo.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取用户信息\r\n     */\r\n    public function getInfo()",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取用户信息\r\n     */\r\n    public function getInfo()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/getPhone.json": {
+    "id": 0,
+    "title": "获取手机号码",
+    "path": "/home/Index/getPhone.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 获取手机号码\r\n     * /home/index/getPhone.json\r\n     * @param string $code\r\n     * @param string $iv\r\n     * @param string $encryptedData\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\DecryptException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     */\r\n    public function getPhone(string $code, string $iv, string $encryptedData)",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 获取手机号码\r\n     * /home/index/getPhone.json\r\n     * @param string $code\r\n     * @param string $iv\r\n     * @param string $encryptedData\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\DecryptException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     */\r\n    public function getPhone(string $code, string $iv, string $encryptedData)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "code",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "iv",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "encryptedData",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/listActivity.json": {
+    "id": 0,
+    "title": "获取门店下的活动列表",
+    "path": "/home/Index/listActivity.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取门店下的活动列表\r\n     * /home/index/listActivity.json\r\n     * @param int $admin_id 门店id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function listActivity()",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取门店下的活动列表\r\n     * /home/index/listActivity.json\r\n     * @param int $admin_id 门店id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function listActivity()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/login.json": {
+    "id": 0,
+    "title": "留资触发",
+    "path": "/home/Index/login.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 留资触发\r\n     * /home/index/login.json\r\n     * @param string $phone 手机号码\r\n     * @param string $code\r\n     * @param string $iv\r\n     * @param string $encryptedData\r\n     * @param string $signature\r\n     * @param string $baby_mom_name 他妈名字\r\n     * @param string $baby_name 宝宝名字\r\n     * @param string $baby_birth 宝宝生日\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\DecryptException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\Exception\r\n     */\r\n    public function login(string $phone, string $code, string $iv,\r\n                          string $encryptedData, string $signature, string $baby_mom_name,\r\n                          string $baby_name = \"\", string $baby_birth = \"1970-01-01\"\r\n    )",
+    "markdown": "\r\n\r\n    /**\r\n     * 留资触发\r\n     * /home/index/login.json\r\n     * @param string $phone 手机号码\r\n     * @param string $code\r\n     * @param string $iv\r\n     * @param string $encryptedData\r\n     * @param string $signature\r\n     * @param string $baby_mom_name 他妈名字\r\n     * @param string $baby_name 宝宝名字\r\n     * @param string $baby_birth 宝宝生日\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\DecryptException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidConfigException\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\Exception\r\n     */\r\n    public function login(string $phone, string $code, string $iv,\r\n                          string $encryptedData, string $signature, string $baby_mom_name,\r\n                          string $baby_name = \"\", string $baby_birth = \"1970-01-01\"\r\n    )",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "phone",
+      "type": "text",
+      "example": "",
+      "desc": " 手机号码"
+     },
+     {
+      "required": 1,
+      "name": "code",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "iv",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "encryptedData",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "signature",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     },
+     {
+      "required": 1,
+      "name": "baby_mom_name",
+      "type": "text",
+      "example": "",
+      "desc": " 他妈名字"
+     },
+     {
+      "required": 0,
+      "name": "baby_name",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 宝宝名字"
+     },
+     {
+      "required": 0,
+      "name": "baby_birth",
+      "type": "text",
+      "example": "\"1970-01-01\"",
+      "desc": " 宝宝生日"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/saveUserInfo.json": {
+    "id": 0,
+    "title": "保存个人信息",
+    "path": "/home/Index/saveUserInfo.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 保存个人信息\r\n     * /home/index/saveUserInfo.json\r\n     * @param string $nickName 昵称\r\n     * @param string $avatarUrl 头像\r\n     * @param string $baby_name 宝宝名字\r\n     * @param string $baby_birth 宝宝生日\r\n     * @param string $baby_mom_name 宝宝他妈名字\r\n     */\r\n    public function saveUserInfo(string $nickName, string $avatarUrl, string $baby_name, string $baby_birth, string $baby_mom_name)",
+    "markdown": "\r\n\r\n    /**\r\n     * 保存个人信息\r\n     * /home/index/saveUserInfo.json\r\n     * @param string $nickName 昵称\r\n     * @param string $avatarUrl 头像\r\n     * @param string $baby_name 宝宝名字\r\n     * @param string $baby_birth 宝宝生日\r\n     * @param string $baby_mom_name 宝宝他妈名字\r\n     */\r\n    public function saveUserInfo(string $nickName, string $avatarUrl, string $baby_name, string $baby_birth, string $baby_mom_name)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "nickName",
+      "type": "text",
+      "example": "",
+      "desc": " 昵称"
+     },
+     {
+      "required": 1,
+      "name": "avatarUrl",
+      "type": "text",
+      "example": "",
+      "desc": " 头像"
+     },
+     {
+      "required": 1,
+      "name": "baby_name",
+      "type": "text",
+      "example": "",
+      "desc": " 宝宝名字"
+     },
+     {
+      "required": 1,
+      "name": "baby_birth",
+      "type": "text",
+      "example": "",
+      "desc": " 宝宝生日"
+     },
+     {
+      "required": 1,
+      "name": "baby_mom_name",
+      "type": "text",
+      "example": "",
+      "desc": " 宝宝他妈名字"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/shareMakeOcr.json": {
+    "id": 0,
+    "title": "生成分享的小程序图片返回小程序图片地址和海报地址",
+    "path": "/home/Index/shareMakeOcr.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 生成分享的小程序图片返回小程序图片地址和海报地址\r\n     * @param int $activity_id 活动的id\r\n     * @param int $width 大小\r\n     * @param string $path 路径\r\n     * @param bool $auto_colo 微信参数\r\n     * @param string $line_color 微信参数\r\n     * @param bool $is_hyaline 微信参数\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\RuntimeException\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function shareMakeOcr(int $activity_id, int $width, string $path = \"pages/index/index\",\r\n                                 bool $auto_colo = false,\r\n                                 string $line_color = '{\"r\":0,\"g\":0,\"b\":0}',\r\n                                 bool $is_hyaline = true)",
+    "markdown": "\r\n\r\n    /**\r\n     * 生成分享的小程序图片返回小程序图片地址和海报地址\r\n     * @param int $activity_id 活动的id\r\n     * @param int $width 大小\r\n     * @param string $path 路径\r\n     * @param bool $auto_colo 微信参数\r\n     * @param string $line_color 微信参数\r\n     * @param bool $is_hyaline 微信参数\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\InvalidArgumentException\r\n     * @throws \\EasyWeChat\\Kernel\\Exceptions\\RuntimeException\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function shareMakeOcr(int $activity_id, int $width, string $path = \"pages/index/index\",\r\n                                 bool $auto_colo = false,\r\n                                 string $line_color = '{\"r\":0,\"g\":0,\"b\":0}',\r\n                                 bool $is_hyaline = true)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "activity_id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动的id"
+     },
+     {
+      "required": 1,
+      "name": "width",
+      "type": "text",
+      "example": "",
+      "desc": " 大小"
+     },
+     {
+      "required": 0,
+      "name": "path",
+      "type": "text",
+      "example": "\"pages/index/index\"",
+      "desc": " 路径"
+     },
+     {
+      "required": 0,
+      "name": "boolauto_colo",
+      "type": "text",
+      "example": "false",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "line_color",
+      "type": "text",
+      "example": "'{\"r\":0",
+      "desc": " 微信参数"
+     },
+     {
+      "required": 0,
+      "name": "boolis_hyaline",
+      "type": "text",
+      "example": "true",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/Index/shopDetail.json": {
+    "id": 0,
+    "title": "获取活动商品的详情",
+    "path": "/home/Index/shopDetail.json",
+    "catid": 1710,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取活动商品的详情\r\n     * /home/index/shopDetail.json\r\n     * @param int $id 活动商品表的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function shopDetail(int $id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取活动商品的详情\r\n     * /home/index/shopDetail.json\r\n     * @param int $id 活动商品表的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function shopDetail(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 活动商品表的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  }
+ }

@@ -1,4 +1,10 @@
-scandir: D:\OneDrive\huishi-shop\application
-pathsuffix: .json
-filesuffix: .class.php
-controller: controller
+tp:
+  scandir: ./application
+  pathsuffix: .json
+  filesuffix: .class.php
+  controller: controller
+
+yapi:
+  token: 5af10be82269b7f3d1ad76f086fd090922396b72675d6860602ebbda6101
+  projectid: 23
+  host: http://api.example.net
