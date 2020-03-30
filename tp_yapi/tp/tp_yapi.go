@@ -130,7 +130,7 @@ func (t *TpYapi) walk(filename string, fi os.FileInfo, err error) error {
 		// 获取目标文件的方法
 		b, _ := ioutil.ReadFile(filename)
 		// 获取@api
-		re, _ := regexp.Compile("@api[^\r\n]+")
+		re := regexp.MustCompile("@api[^\r\n]+")
 		cateName := string(re.Find(b))
 		if cateName == "" {
 			return nil
@@ -139,21 +139,22 @@ func (t *TpYapi) walk(filename string, fi os.FileInfo, err error) error {
 		modules := Split(strings.Replace(filename, Append(true, t.Controller, fi.Name()), "", -1))
 		module := modules[len(modules)-1]
 		control := Replace(fi.Name(), "", t.FileSuffix, ".php", ".class.php", "controller", "Controller")
-		dealFunction(b, cateName, "/"+module+"/"+control, t.PathSuffix)
+		dealFunction([]byte(strings.Split(string(b),cateName)[1]), cateName, "/"+module+"/"+control, t.PathSuffix)
 	}
 	return nil
 }
 
 func dealFunction(b []byte, cateName, path, suffix string) {
-	re, _ := regexp.Compile("\\s+\\/\\*\\*[^`]*?\\)")
+	re := regexp.MustCompile("\\s+\\/\\*\\*[^`]*?\\)")
 	bs := re.FindAll(b, -1)
+
 	for _, v := range bs {
 		if Contains(string(v), false, "namespace", "class", "@api") || (!Contains(string(v), true, "public", "function")) {
 			continue
 		}
-		reName, _ := regexp.Compile(`function\s*?([^-~\s]*?)\(`)
+		reName := regexp.MustCompile(`function\s*?([^-~\s]*?)\(`)
 		name := Replace(string(reName.Find(v)), "", "function", " ", "(")
-		reTitle, _ := regexp.Compile("[^/\\*\n(\\s+)]+[\\s]*?[^/*\n(\\s+)]+")
+		reTitle := regexp.MustCompile("[^/\\*\n(\\s+)]+[\\s]*?[^/*\n(\\s+)]+")
 		title := string(reTitle.Find(v))
 		fields := dealFiled(v)
 		tempApi := &yapi.Api{

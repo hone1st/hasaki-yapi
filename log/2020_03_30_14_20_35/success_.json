@@ -1,0 +1,1711 @@
+{
+  "上传工具类": {
+   "/admino/Upload/txFile.json": {
+    "id": 0,
+    "title": "上传文件通过腾讯云 无需对接",
+    "path": "/admino/Upload/txFile.json",
+    "catid": 2046,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     *\r\n     * 上传文件通过腾讯云 无需对接\r\n     * @param string $path\r\n     */\r\n    public function txFile($path = '')",
+    "markdown": "\r\n\r\n    /**\r\n     *\r\n     * 上传文件通过腾讯云 无需对接\r\n     * @param string $path\r\n     */\r\n    public function txFile($path = '')",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "path",
+      "type": "text",
+      "example": "''",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Upload/uploadEditor.json": {
+    "id": 0,
+    "title": "编辑器上传接口",
+    "path": "/admino/Upload/uploadEditor.json",
+    "catid": 2046,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 编辑器上传接口\r\n     * @throws Exception\r\n     */\r\n    public function uploadEditor()",
+    "markdown": "\r\n\r\n    /**\r\n     * 编辑器上传接口\r\n     * @throws Exception\r\n     */\r\n    public function uploadEditor()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Upload/uploadFile.json": {
+    "id": 0,
+    "title": "上传文件",
+    "path": "/admino/Upload/uploadFile.json",
+    "catid": 2046,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 上传文件\r\n     * @param string $name\r\n     */\r\n    public function uploadFile($name=\"image\")",
+    "markdown": "\r\n\r\n    /**\r\n     * 上传文件\r\n     * @param string $name\r\n     */\r\n    public function uploadFile($name=\"image\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "name",
+      "type": "text",
+      "example": "\"image\"",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Upload/uploadPhotos.json": {
+    "id": 0,
+    "title": "上传照片",
+    "path": "/admino/Upload/uploadPhotos.json",
+    "catid": 2046,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n * 上传照片\r\n */\r\n    public function uploadPhotos()",
+    "markdown": "\r\n\r\n    /**\r\n * 上传照片\r\n */\r\n    public function uploadPhotos()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Upload/uploadToCos.json": {
+    "id": 0,
+    "title": "上次文件",
+    "path": "/admino/Upload/uploadToCos.json",
+    "catid": 2046,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 上次文件\r\n     * @param string $tag 区分不同的上传到cos同的文件夹下例如vedio视频文件夹\r\n     * @throws Exception\r\n     */\r\n    public function uploadToCos(string $tag)",
+    "markdown": "\r\n\r\n    /**\r\n     * 上次文件\r\n     * @param string $tag 区分不同的上传到cos同的文件夹下例如vedio视频文件夹\r\n     * @throws Exception\r\n     */\r\n    public function uploadToCos(string $tag)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "tag",
+      "type": "text",
+      "example": "",
+      "desc": " 区分不同的上传到cos同的文件夹下例如vedio视频文件夹"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "前台数据分析模块": {
+   "/home/DataAnalysis/areaSensor.json": {
+    "id": 0,
+    "title": "获取某个传感器的所有地块下的第一块的数据",
+    "path": "/home/DataAnalysis/areaSensor.json",
+    "catid": 2206,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取某个传感器的所有地块下的第一块的数据\r\n     * /Home/DataAnalysis/areaSensor.json\r\n     * @param int $dev_code 传感器的编号\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function areaSensor(int $dev_code = 0)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取某个传感器的所有地块下的第一块的数据\r\n     * /Home/DataAnalysis/areaSensor.json\r\n     * @param int $dev_code 传感器的编号\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function areaSensor(int $dev_code = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "dev_code",
+      "type": "text",
+      "example": "0",
+      "desc": " 传感器的编号"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/home/DataAnalysis/outPut.json": {
+    "id": 0,
+    "title": "总产量的图表数据op,all|地块收益area|作物单位farmer_unit|地区销售sa|大区收益sba",
+    "path": "/home/DataAnalysis/outPut.json",
+    "catid": 2206,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 总产量的图表数据op,all|地块收益area|作物单位farmer_unit|地区销售sa|大区收益sba\r\n     * /Home/DataAnalysis/outPut.json\r\n     */\r\n    public function outPut()",
+    "markdown": "\r\n\r\n    /**\r\n     * 总产量的图表数据op,all|地块收益area|作物单位farmer_unit|地区销售sa|大区收益sba\r\n     * /Home/DataAnalysis/outPut.json\r\n     */\r\n    public function outPut()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "前台设备运维模块": {
+   "/home/EquipOps/equipOps.json": {
+    "id": 0,
+    "title": "获取运维的图表数据",
+    "path": "/home/EquipOps/equipOps.json",
+    "catid": 2214,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取运维的图表数据\r\n     * /Home/EquipOps/equipOps.json\r\n     * area_data:包含地块信息监测天数时长\r\n     * sensor_error:传感器的损坏数据\r\n     * error_list:故障列表取最新的10条\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function equipOps()",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取运维的图表数据\r\n     * /Home/EquipOps/equipOps.json\r\n     * area_data:包含地块信息监测天数时长\r\n     * sensor_error:传感器的损坏数据\r\n     * error_list:故障列表取最新的10条\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function equipOps()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "前台销售趋势": {
+   "/home/Sale/saleDesc.json": {
+    "id": 0,
+    "title": "销售趋势的所有图的数据",
+    "path": "/home/Sale/saleDesc.json",
+    "catid": 2222,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n    /**\r\n     * 销售趋势的所有图的数据\r\n     * 销量和销售额sale_data|上半年up|下半年down|今年总产量current|去年总产量last|地区的数据sa\r\n     * /Home/Sale/saleDesc.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function saleDesc()",
+    "markdown": "\r\n    /**\r\n     * 销售趋势的所有图的数据\r\n     * 销量和销售额sale_data|上半年up|下半年down|今年总产量current|去年总产量last|地区的数据sa\r\n     * /Home/Sale/saleDesc.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function saleDesc()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台传感器设置": {
+   "/admino/Sensor/getHisSensorData.json": {
+    "id": 0,
+    "title": "获取传感器的历史数据",
+    "path": "/admino/Sensor/getHisSensorData.json",
+    "catid": 2038,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取传感器的历史数据\r\n     * /admino/Sensor/getHisSensorData.json\r\n     * @param int $devCode 传感器的编号\r\n     * @param int $area_bh 地块表的bh默认0全部\r\n     * @param array $times 时间段[start:,end:]\r\n     * @param int $page 当前页默认1\r\n     * @param int $limit 每页默认10\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getHisSensorData(int $devCode = 0, int $area_bh = 0, array $times = [], int $page = 1, $limit = 10)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取传感器的历史数据\r\n     * /admino/Sensor/getHisSensorData.json\r\n     * @param int $devCode 传感器的编号\r\n     * @param int $area_bh 地块表的bh默认0全部\r\n     * @param array $times 时间段[start:,end:]\r\n     * @param int $page 当前页默认1\r\n     * @param int $limit 每页默认10\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getHisSensorData(int $devCode = 0, int $area_bh = 0, array $times = [], int $page = 1, $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "devCode",
+      "type": "text",
+      "example": "0",
+      "desc": " 传感器的编号"
+     },
+     {
+      "required": 0,
+      "name": "area_bh",
+      "type": "text",
+      "example": "0",
+      "desc": " 地块表的bh默认0全部"
+     },
+     {
+      "required": 0,
+      "name": "times",
+      "type": "text",
+      "example": "[]",
+      "desc": " 时间段[start:,end:]"
+     },
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": " 当前页默认1"
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": " 每页默认10"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Sensor/getSensorData.json": {
+    "id": 0,
+    "title": "获取地块的传感器数据",
+    "path": "/admino/Sensor/getSensorData.json",
+    "catid": 2038,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取地块的传感器数据\r\n     * /admino/Sensor/getSensorData.json\r\n     * @param int $board_id 采集板-监测点的id默认为0展示全部\r\n     * @param int $area_bh 地块bh默认为0展示第一块\r\n     * @param int $page 当前页默认为1\r\n     * @param int $limit 每页限制条数10\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getSensorData(int $board_id = 0, int $area_bh = 0, int $page = 1, $limit = 10)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取地块的传感器数据\r\n     * /admino/Sensor/getSensorData.json\r\n     * @param int $board_id 采集板-监测点的id默认为0展示全部\r\n     * @param int $area_bh 地块bh默认为0展示第一块\r\n     * @param int $page 当前页默认为1\r\n     * @param int $limit 每页限制条数10\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getSensorData(int $board_id = 0, int $area_bh = 0, int $page = 1, $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "board_id",
+      "type": "text",
+      "example": "0",
+      "desc": " 采集板-监测点的id默认为0展示全部"
+     },
+     {
+      "required": 0,
+      "name": "area_bh",
+      "type": "text",
+      "example": "0",
+      "desc": " 地块bh默认为0展示第一块"
+     },
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": " 当前页默认为1"
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": " 每页限制条数10"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Sensor/getSensorError.json": {
+    "id": 0,
+    "title": "获取异常传感器数据",
+    "path": "/admino/Sensor/getSensorError.json",
+    "catid": 2038,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取异常传感器数据\r\n     * @param int $area_bh 地块表的编号\r\n     * @param int $devCode 类型码传感器编号\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getSensorError(int $area_bh = 0, int $devCode = 0)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取异常传感器数据\r\n     * @param int $area_bh 地块表的编号\r\n     * @param int $devCode 类型码传感器编号\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getSensorError(int $area_bh = 0, int $devCode = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "area_bh",
+      "type": "text",
+      "example": "0",
+      "desc": " 地块表的编号"
+     },
+     {
+      "required": 0,
+      "name": "devCode",
+      "type": "text",
+      "example": "0",
+      "desc": " 类型码传感器编号"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Sensor/saveSensorData.json": {
+    "id": 0,
+    "title": "修改传感器的值",
+    "path": "/admino/Sensor/saveSensorData.json",
+    "catid": 2038,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 修改传感器的值\r\n     * /admino/Sensor/saveSensorData.json\r\n     * @param array $data [[id:,devData:,way:,value:]]\r\n     * id修改的目标的\r\n     * devData源数据\r\n     * way操作符1加2减3除4乘\r\n     * value目标操作符\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function saveSensorData(array $data)",
+    "markdown": "\r\n\r\n    /**\r\n     * 修改传感器的值\r\n     * /admino/Sensor/saveSensorData.json\r\n     * @param array $data [[id:,devData:,way:,value:]]\r\n     * id修改的目标的\r\n     * devData源数据\r\n     * way操作符1加2减3除4乘\r\n     * value目标操作符\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function saveSensorData(array $data)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "data",
+      "type": "text",
+      "example": "",
+      "desc": " [[id:,devData:,way:,value:]]"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台公共的获取下拉": {
+   "/admino/ApiCommon/getMapArea.json": {
+    "id": 0,
+    "title": "获取地块的map的映射以便于取值",
+    "path": "/admino/ApiCommon/getMapArea.json",
+    "catid": 1998,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取地块的map的映射以便于取值\r\n     * 此映射用于表格的列表展示的映射\r\n     * /admino/ApiCommon/getMapArea.json\r\n     */\r\n    public function getMapArea()",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取地块的map的映射以便于取值\r\n     * 此映射用于表格的列表展示的映射\r\n     * /admino/ApiCommon/getMapArea.json\r\n     */\r\n    public function getMapArea()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/ApiCommon/selectArea.json": {
+    "id": 0,
+    "title": "获取所有地块",
+    "path": "/admino/ApiCommon/selectArea.json",
+    "catid": 1998,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n    /**\r\n     * 获取所有地块\r\n     * /admino/ApiCommon/selectArea.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectArea()",
+    "markdown": "\r\n    /**\r\n     * 获取所有地块\r\n     * /admino/ApiCommon/selectArea.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectArea()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/ApiCommon/selectBoard.json": {
+    "id": 0,
+    "title": "某个地块获取监测点",
+    "path": "/admino/ApiCommon/selectBoard.json",
+    "catid": 1998,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 某个地块获取监测点\r\n     * /admino/ApiCommon/selectBoard.json\r\n     * @param int $area_bh 为0时默认返回第一块地的监测点数据\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectBoard(int $area_bh = 0)",
+    "markdown": "\r\n\r\n    /**\r\n     * 某个地块获取监测点\r\n     * /admino/ApiCommon/selectBoard.json\r\n     * @param int $area_bh 为0时默认返回第一块地的监测点数据\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectBoard(int $area_bh = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "area_bh",
+      "type": "text",
+      "example": "0",
+      "desc": " 为0时默认返回第一块地的监测点数据"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/ApiCommon/selectSensor.json": {
+    "id": 0,
+    "title": "获取传感器类型不分组",
+    "path": "/admino/ApiCommon/selectSensor.json",
+    "catid": 1998,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取传感器类型不分组\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectSensor()",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取传感器类型不分组\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectSensor()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/ApiCommon/selectSensorType.json": {
+    "id": 0,
+    "title": "获取传感器类型列表分组",
+    "path": "/admino/ApiCommon/selectSensorType.json",
+    "catid": 1998,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取传感器类型列表分组\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectSensorType()",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取传感器类型列表分组\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectSensorType()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台农作物信息设置": {
+   "/admino/FarmerFood/deleteFramerFood.json": {
+    "id": 0,
+    "title": "删除农作物",
+    "path": "/admino/FarmerFood/deleteFramerFood.json",
+    "catid": 2134,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 删除农作物\r\n     * /admino/FarmerFood/deleteFramerFood.json\r\n     * @param int $id 农作物的id\r\n     * @param int $confirm 再次确认\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function deleteFramerFood(int $id, int $confirm = 0)",
+    "markdown": "\r\n\r\n    /**\r\n     * 删除农作物\r\n     * /admino/FarmerFood/deleteFramerFood.json\r\n     * @param int $id 农作物的id\r\n     * @param int $confirm 再次确认\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function deleteFramerFood(int $id, int $confirm = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 农作物的id"
+     },
+     {
+      "required": 0,
+      "name": "confirm",
+      "type": "text",
+      "example": "0",
+      "desc": " 再次确认"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/FarmerFood/getFarmerGoods.json": {
+    "id": 0,
+    "title": "获取所有的农作物",
+    "path": "/admino/FarmerFood/getFarmerGoods.json",
+    "catid": 2134,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n    /**\r\n     * 获取所有的农作物\r\n     * /admino/FarmerFood/getFarmerGoods.json\r\n     * @param string $name 搜素关键字默认为空可不传\r\n     * @param int $page 当前页默认1\r\n     * @param int $limit 一页默认10条可自定义\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getFarmerGoods(string $name = \"\", int $page = 1, int $limit = 10)",
+    "markdown": "\r\n    /**\r\n     * 获取所有的农作物\r\n     * /admino/FarmerFood/getFarmerGoods.json\r\n     * @param string $name 搜素关键字默认为空可不传\r\n     * @param int $page 当前页默认1\r\n     * @param int $limit 一页默认10条可自定义\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getFarmerGoods(string $name = \"\", int $page = 1, int $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "name",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 搜素关键字默认为空可不传"
+     },
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": " 当前页默认1"
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": " 一页默认10条可自定义"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/FarmerFood/sOaFarmerGoods.json": {
+    "id": 0,
+    "title": "新增或者保存农作物的信息",
+    "path": "/admino/FarmerFood/sOaFarmerGoods.json",
+    "catid": 2134,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 新增或者保存农作物的信息\r\n     * /admino/FarmerFood/sOaFarmerGoods.json\r\n     * @param int $farmer_goods_id 农作物表的id 默认值为0不传为新增\r\n     * @param string $name 农作物名字\r\n     * @param string $unit 农作物单位\r\n     * @param string $about 农作物说明\r\n     * @param string $feature 种植特点\r\n     * @param string $image 图片地址\r\n     */\r\n    public function sOaFarmerGoods(string $name, string $unit, string $image, string $about = \"\", string $feature = \"\", int $farmer_goods_id = 0)",
+    "markdown": "\r\n\r\n    /**\r\n     * 新增或者保存农作物的信息\r\n     * /admino/FarmerFood/sOaFarmerGoods.json\r\n     * @param int $farmer_goods_id 农作物表的id 默认值为0不传为新增\r\n     * @param string $name 农作物名字\r\n     * @param string $unit 农作物单位\r\n     * @param string $about 农作物说明\r\n     * @param string $feature 种植特点\r\n     * @param string $image 图片地址\r\n     */\r\n    public function sOaFarmerGoods(string $name, string $unit, string $image, string $about = \"\", string $feature = \"\", int $farmer_goods_id = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 农作物名字"
+     },
+     {
+      "required": 1,
+      "name": "unit",
+      "type": "text",
+      "example": "",
+      "desc": " 农作物单位"
+     },
+     {
+      "required": 1,
+      "name": "image",
+      "type": "text",
+      "example": "",
+      "desc": " 图片地址"
+     },
+     {
+      "required": 0,
+      "name": "about",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 农作物说明"
+     },
+     {
+      "required": 0,
+      "name": "feature",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 种植特点"
+     },
+     {
+      "required": 0,
+      "name": "farmer_goods_id",
+      "type": "text",
+      "example": "0",
+      "desc": " 农作物表的id 默认值为0不传为新增"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台登录模块": {
+   "/admino/Login/changePassword.json": {
+    "id": 0,
+    "title": "更改密码",
+    "path": "/admino/Login/changePassword.json",
+    "catid": 2022,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 更改密码\r\n     * @param $password\r\n     */\r\n    public function changePassword($password)",
+    "markdown": "\r\n\r\n    /**\r\n     * 更改密码\r\n     * @param $password\r\n     */\r\n    public function changePassword($password)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "password",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Login/getMenu.json": {
+    "id": 0,
+    "title": "根据用户类型拿菜单",
+    "path": "/admino/Login/getMenu.json",
+    "catid": 2022,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 根据用户类型拿菜单\r\n     */\r\n    public function getMenu()",
+    "markdown": "\r\n\r\n    /**\r\n     * 根据用户类型拿菜单\r\n     */\r\n    public function getMenu()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/Login/login.json": {
+    "id": 0,
+    "title": "后台登录接口",
+    "path": "/admino/Login/login.json",
+    "catid": 2022,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 后台登录接口\r\n     * @param string $username 用户名\r\n     * @param string $password 密码\r\n     */\r\n    public function login($username, $password)",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 后台登录接口\r\n     * @param string $username 用户名\r\n     * @param string $password 密码\r\n     */\r\n    public function login($username, $password)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "username",
+      "type": "text",
+      "example": "",
+      "desc": " 用户名"
+     },
+     {
+      "required": 1,
+      "name": "password",
+      "type": "text",
+      "example": "",
+      "desc": " 密码"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台的地块模块": {
+   "/admino/FarmerArea/aOsChangePlan.json": {
+    "id": 0,
+    "title": "修改或者保存改良计划",
+    "path": "/admino/FarmerArea/aOsChangePlan.json",
+    "catid": 2014,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 修改或者保存改良计划\r\n     * /admino/FarmerArea/aOsChangePlan.json\r\n     * @param int $board_id 采集板或者监测点的表的id\r\n     * @param string $name 改良名字\r\n     * @param string $solution 解决方案\r\n     * @param array $time_dot 时间节点数组\r\n     * [\"2018-1-15\",\"2019-01-15\",\"2020-01-01\",\"2020-04-05\",\"2020-12-01\"]\r\n     * @param int $id 改良计划表的id\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function aOsChangePlan(int $board_id, string $name, string $solution, array $time_dot, int $id = 0)",
+    "markdown": "\r\n\r\n    /**\r\n     * 修改或者保存改良计划\r\n     * /admino/FarmerArea/aOsChangePlan.json\r\n     * @param int $board_id 采集板或者监测点的表的id\r\n     * @param string $name 改良名字\r\n     * @param string $solution 解决方案\r\n     * @param array $time_dot 时间节点数组\r\n     * [\"2018-1-15\",\"2019-01-15\",\"2020-01-01\",\"2020-04-05\",\"2020-12-01\"]\r\n     * @param int $id 改良计划表的id\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function aOsChangePlan(int $board_id, string $name, string $solution, array $time_dot, int $id = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "board_id",
+      "type": "text",
+      "example": "",
+      "desc": " 采集板或者监测点的表的id"
+     },
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 改良名字"
+     },
+     {
+      "required": 1,
+      "name": "solution",
+      "type": "text",
+      "example": "",
+      "desc": " 解决方案"
+     },
+     {
+      "required": 1,
+      "name": "time_dot",
+      "type": "text",
+      "example": "",
+      "desc": " 时间节点数组"
+     },
+     {
+      "required": 0,
+      "name": "id",
+      "type": "text",
+      "example": "0",
+      "desc": " 改良计划表的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/FarmerArea/allArea.json": {
+    "id": 0,
+    "title": "地块信息",
+    "path": "/admino/FarmerArea/allArea.json",
+    "catid": 2014,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 地块信息\r\n     * /admino/FarmerArea/allArea.json\r\n     */\r\n    public function allArea()",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 地块信息\r\n     * /admino/FarmerArea/allArea.json\r\n     */\r\n    public function allArea()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/FarmerArea/cameraAll.json": {
+    "id": 0,
+    "title": "获取地块所有的摄像头设置",
+    "path": "/admino/FarmerArea/cameraAll.json",
+    "catid": 2014,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取地块所有的摄像头设置\r\n     * /admino/FarmerArea/cameraAll.json\r\n     * @param int $area_bh 地块表的bh\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function cameraAll(int $area_bh)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取地块所有的摄像头设置\r\n     * /admino/FarmerArea/cameraAll.json\r\n     * @param int $area_bh 地块表的bh\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function cameraAll(int $area_bh)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "area_bh",
+      "type": "text",
+      "example": "",
+      "desc": " 地块表的bh"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/FarmerArea/getBoardData.json": {
+    "id": 0,
+    "title": "获取检测板的数据",
+    "path": "/admino/FarmerArea/getBoardData.json",
+    "catid": 2014,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取检测板的数据\r\n     * /admino/FarmerArea/getBoardData.json\r\n     * @param int $id boards的id\r\n     * @param int $page 当前页\r\n     * @param int $limit 页条数\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getBoardData(int $id, int $page = 1, int $limit = 10)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取检测板的数据\r\n     * /admino/FarmerArea/getBoardData.json\r\n     * @param int $id boards的id\r\n     * @param int $page 当前页\r\n     * @param int $limit 页条数\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getBoardData(int $id, int $page = 1, int $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " boards的id"
+     },
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": " 当前页"
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": " 页条数"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/FarmerArea/saveArea.json": {
+    "id": 0,
+    "title": "保存地块信息",
+    "path": "/admino/FarmerArea/saveArea.json",
+    "catid": 2014,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 保存地块信息\r\n     * /admino/FarmerArea/saveArea.json\r\n     * @param int $area_id 地块表的id\r\n     * @param string $name 地块名字\r\n     * @param string $income 当前收益\r\n     * @param string $all_area 总面积\r\n     * @param string $desc 地块介绍\r\n     * @param string $report 分析报告\r\n     */\r\n    public function saveArea(int $area_id, string $name, string $income, string $all_area, string $desc = \"\", string $report = \"\")",
+    "markdown": "\r\n\r\n    /**\r\n     * 保存地块信息\r\n     * /admino/FarmerArea/saveArea.json\r\n     * @param int $area_id 地块表的id\r\n     * @param string $name 地块名字\r\n     * @param string $income 当前收益\r\n     * @param string $all_area 总面积\r\n     * @param string $desc 地块介绍\r\n     * @param string $report 分析报告\r\n     */\r\n    public function saveArea(int $area_id, string $name, string $income, string $all_area, string $desc = \"\", string $report = \"\")",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "area_id",
+      "type": "text",
+      "example": "",
+      "desc": " 地块表的id"
+     },
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 地块名字"
+     },
+     {
+      "required": 1,
+      "name": "income",
+      "type": "text",
+      "example": "",
+      "desc": " 当前收益"
+     },
+     {
+      "required": 1,
+      "name": "all_area",
+      "type": "text",
+      "example": "",
+      "desc": " 总面积"
+     },
+     {
+      "required": 0,
+      "name": "desc",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 地块介绍"
+     },
+     {
+      "required": 0,
+      "name": "report",
+      "type": "text",
+      "example": "\"\"",
+      "desc": " 分析报告"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/FarmerArea/saveBoard.json": {
+    "id": 0,
+    "title": "监测点的设置",
+    "path": "/admino/FarmerArea/saveBoard.json",
+    "catid": 2014,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 监测点的设置\r\n     * /admino/FarmerArea/saveBoard.json\r\n     * @param int $board_id 监测点|采集板表的id\r\n     * @param string $name 监测点名字\r\n     * @param int $farmer_goods_id 农作物表的id\r\n     * @param string $time_s 种植时间\r\n     * @param string $time_g 计划收货时间\r\n     * @param string $get 计划产量\r\n     */\r\n    public function saveBoard(int $board_id, string $name, int $farmer_goods_id, string $time_s, string $time_g, string $get)",
+    "markdown": "\r\n\r\n    /**\r\n     * 监测点的设置\r\n     * /admino/FarmerArea/saveBoard.json\r\n     * @param int $board_id 监测点|采集板表的id\r\n     * @param string $name 监测点名字\r\n     * @param int $farmer_goods_id 农作物表的id\r\n     * @param string $time_s 种植时间\r\n     * @param string $time_g 计划收货时间\r\n     * @param string $get 计划产量\r\n     */\r\n    public function saveBoard(int $board_id, string $name, int $farmer_goods_id, string $time_s, string $time_g, string $get)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "board_id",
+      "type": "text",
+      "example": "",
+      "desc": " 监测点|采集板表的id"
+     },
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 监测点名字"
+     },
+     {
+      "required": 1,
+      "name": "farmer_goods_id",
+      "type": "text",
+      "example": "",
+      "desc": " 农作物表的id"
+     },
+     {
+      "required": 1,
+      "name": "time_s",
+      "type": "text",
+      "example": "",
+      "desc": " 种植时间"
+     },
+     {
+      "required": 1,
+      "name": "time_g",
+      "type": "text",
+      "example": "",
+      "desc": " 计划收货时间"
+     },
+     {
+      "required": 1,
+      "name": "get",
+      "type": "text",
+      "example": "",
+      "desc": " 计划产量"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/FarmerArea/selectChanePlan.json": {
+    "id": 0,
+    "title": "获取某个采集板的改良计划",
+    "path": "/admino/FarmerArea/selectChanePlan.json",
+    "catid": 2014,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取某个采集板的改良计划\r\n     * /admino/FarmerArea/selectChanePlan.json\r\n     * @param int $board_id 采集板的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectChanePlan(int $board_id )",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取某个采集板的改良计划\r\n     * /admino/FarmerArea/selectChanePlan.json\r\n     * @param int $board_id 采集板的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function selectChanePlan(int $board_id )",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "board_id",
+      "type": "text",
+      "example": "",
+      "desc": " 采集板的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "后台销售设置模块": {
+   "/admino/SaleGoods/aOsBigSaleA.json": {
+    "id": 0,
+    "title": "团队设置添加大区或者修改",
+    "path": "/admino/SaleGoods/aOsBigSaleA.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 团队设置添加大区或者修改\r\n     * /admino/SaleGoods/aOsBigSaleA.json\r\n     * @param string $name 大区名字\r\n     * @param string $sale_dest 销售指标\r\n     * @param string $sale_actual 实际销售\r\n     * @param int $id 默认为0则添加\r\n     */\r\n    public function aOsBigSaleA(string $name, string $sale_dest, string $sale_actual, int $id = 0)",
+    "markdown": "\r\n\r\n    /**\r\n     * 团队设置添加大区或者修改\r\n     * /admino/SaleGoods/aOsBigSaleA.json\r\n     * @param string $name 大区名字\r\n     * @param string $sale_dest 销售指标\r\n     * @param string $sale_actual 实际销售\r\n     * @param int $id 默认为0则添加\r\n     */\r\n    public function aOsBigSaleA(string $name, string $sale_dest, string $sale_actual, int $id = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 大区名字"
+     },
+     {
+      "required": 1,
+      "name": "sale_dest",
+      "type": "text",
+      "example": "",
+      "desc": " 销售指标"
+     },
+     {
+      "required": 1,
+      "name": "sale_actual",
+      "type": "text",
+      "example": "",
+      "desc": " 实际销售"
+     },
+     {
+      "required": 0,
+      "name": "id",
+      "type": "text",
+      "example": "0",
+      "desc": " 默认为0则添加"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/aOsSaleArea.json": {
+    "id": 0,
+    "title": "添加或者修改销售地区",
+    "path": "/admino/SaleGoods/aOsSaleArea.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 添加或者修改销售地区\r\n     * /admino/SaleGoods/aOsSaleArea.json\r\n     * @param string $name 销售地区名字\r\n     * @param int $sale_area_id 销售地区的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function aOsSaleArea(string $name, int $sale_area_id = 0)",
+    "markdown": "\r\n\r\n    /**\r\n     * 添加或者修改销售地区\r\n     * /admino/SaleGoods/aOsSaleArea.json\r\n     * @param string $name 销售地区名字\r\n     * @param int $sale_area_id 销售地区的id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function aOsSaleArea(string $name, int $sale_area_id = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "name",
+      "type": "text",
+      "example": "",
+      "desc": " 销售地区名字"
+     },
+     {
+      "required": 0,
+      "name": "sale_area_id",
+      "type": "text",
+      "example": "0",
+      "desc": " 销售地区的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/addSale.json": {
+    "id": 0,
+    "title": "销量的添加",
+    "path": "/admino/SaleGoods/addSale.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 销量的添加\r\n     * /admino/SaleGoods/addSale.json\r\n     * @param int $farmer_goods_id 农作物的id\r\n     * @param array $data 添加的数据\r\n     * [[\"month\" =\u003e $i,\"value\" =\u003e 10 + $i]]\r\n     * month月份 value值\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function addSale(int $farmer_goods_id, array $data)",
+    "markdown": "\r\n\r\n    /**\r\n     * 销量的添加\r\n     * /admino/SaleGoods/addSale.json\r\n     * @param int $farmer_goods_id 农作物的id\r\n     * @param array $data 添加的数据\r\n     * [[\"month\" =\u003e $i,\"value\" =\u003e 10 + $i]]\r\n     * month月份 value值\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function addSale(int $farmer_goods_id, array $data)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "farmer_goods_id",
+      "type": "text",
+      "example": "",
+      "desc": " 农作物的id"
+     },
+     {
+      "required": 1,
+      "name": "data",
+      "type": "text",
+      "example": "",
+      "desc": " 添加的数据"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/addSaleFoods.json": {
+    "id": 0,
+    "title": "销量地区添加添加农作物",
+    "path": "/admino/SaleGoods/addSaleFoods.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 销量地区添加添加农作物\r\n     * /admino/SaleGoods/getSaleFoodsList.json\r\n     * @param int $farmer_goods_id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function addSaleFoods(int $farmer_goods_id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 销量地区添加添加农作物\r\n     * /admino/SaleGoods/getSaleFoodsList.json\r\n     * @param int $farmer_goods_id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function addSaleFoods(int $farmer_goods_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "farmer_goods_id",
+      "type": "text",
+      "example": "",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/allSaleArea.json": {
+    "id": 0,
+    "title": "获取所有的销售地区",
+    "path": "/admino/SaleGoods/allSaleArea.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取所有的销售地区\r\n     * /admino/SaleGoods/allSaleArea.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function allSaleArea()",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取所有的销售地区\r\n     * /admino/SaleGoods/allSaleArea.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function allSaleArea()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/deleteSaleArea.json": {
+    "id": 0,
+    "title": "删除销售地区",
+    "path": "/admino/SaleGoods/deleteSaleArea.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 删除销售地区\r\n     * /admino/SaleGoods/deleteSaleArea.json\r\n     * @param int $id 销售地区表的id\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function deleteSaleArea(int $id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 删除销售地区\r\n     * /admino/SaleGoods/deleteSaleArea.json\r\n     * @param int $id 销售地区表的id\r\n     * @throws \\think\\Exception\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function deleteSaleArea(int $id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "id",
+      "type": "text",
+      "example": "",
+      "desc": " 销售地区表的id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/editSaleFa.json": {
+    "id": 0,
+    "title": "销量地区修改单条数据",
+    "path": "/admino/SaleGoods/editSaleFa.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 销量地区修改单条数据\r\n     * /admino/SaleGoods/editSaleFa.json\r\n     * @param int $farmer_goods_id 农作物id\r\n     * @param array $data 修改的数据回传 [[id:,value:]]\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function editSaleFa(int $farmer_goods_id, array $data)",
+    "markdown": "\r\n\r\n    /**\r\n     * 销量地区修改单条数据\r\n     * /admino/SaleGoods/editSaleFa.json\r\n     * @param int $farmer_goods_id 农作物id\r\n     * @param array $data 修改的数据回传 [[id:,value:]]\r\n     * @throws \\think\\exception\\PDOException\r\n     */\r\n    public function editSaleFa(int $farmer_goods_id, array $data)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "farmer_goods_id",
+      "type": "text",
+      "example": "",
+      "desc": " 农作物id"
+     },
+     {
+      "required": 1,
+      "name": "data",
+      "type": "text",
+      "example": "",
+      "desc": " 修改的数据回传 [[id:,value:]]"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/getOSaleFa.json": {
+    "id": 0,
+    "title": "获取某个农作物的产量设置信息",
+    "path": "/admino/SaleGoods/getOSaleFa.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 获取某个农作物的产量设置信息\r\n     * /admino/SaleGoods/getOSaleFa.json\r\n     * @param int $farmer_goods_id 农作物id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getOSaleFa(int $farmer_goods_id)",
+    "markdown": "\r\n\r\n    /**\r\n     * 获取某个农作物的产量设置信息\r\n     * /admino/SaleGoods/getOSaleFa.json\r\n     * @param int $farmer_goods_id 农作物id\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getOSaleFa(int $farmer_goods_id)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "farmer_goods_id",
+      "type": "text",
+      "example": "",
+      "desc": " 农作物id"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/getSaleFg.json": {
+    "id": 0,
+    "title": "销量获取可以添加的弄作为列表",
+    "path": "/admino/SaleGoods/getSaleFg.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 销量获取可以添加的弄作为列表\r\n     * /admino/SaleGoods/getSaleFg.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getSaleFg()",
+    "markdown": "\r\n\r\n    /**\r\n     * 销量获取可以添加的弄作为列表\r\n     * /admino/SaleGoods/getSaleFg.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function getSaleFg()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/getSaleFoodsList.json": {
+    "id": 0,
+    "title": "销量地区获取可以添加的作物列表",
+    "path": "/admino/SaleGoods/getSaleFoodsList.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 销量地区获取可以添加的作物列表\r\n     * /admino/SaleGoods/getSaleFoodsList.json\r\n     */\r\n    public function getSaleFoodsList()",
+    "markdown": "\r\n\r\n    /**\r\n     * 销量地区获取可以添加的作物列表\r\n     * /admino/SaleGoods/getSaleFoodsList.json\r\n     */\r\n    public function getSaleFoodsList()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/listBigSaleA.json": {
+    "id": 0,
+    "title": "团队设置获取所有大区的数据列表",
+    "path": "/admino/SaleGoods/listBigSaleA.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n    /**\r\n     * 团队设置获取所有大区的数据列表\r\n     * /admino/SaleGoods/listBigSaleA.json\r\n     * @param int $page 当前页为1\r\n     * @param int $limit 默认为10条\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function listBigSaleA(int $page = 1, int $limit = 10)",
+    "markdown": "\r\n\r\n    /**\r\n     * 团队设置获取所有大区的数据列表\r\n     * /admino/SaleGoods/listBigSaleA.json\r\n     * @param int $page 当前页为1\r\n     * @param int $limit 默认为10条\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function listBigSaleA(int $page = 1, int $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "1",
+      "desc": " 当前页为1"
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": " 默认为10条"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/listSale.json": {
+    "id": 0,
+    "title": "销量获取列表",
+    "path": "/admino/SaleGoods/listSale.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 销量获取列表\r\n     * /admino/SaleGoods/listSale.json\r\n     * @param int $type 0获取今年1获取去年\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function listSale(int $type = 0)",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 销量获取列表\r\n     * /admino/SaleGoods/listSale.json\r\n     * @param int $type 0获取今年1获取去年\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function listSale(int $type = 0)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "type",
+      "type": "text",
+      "example": "0",
+      "desc": " 0获取今年1获取去年"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/listSaleFa.json": {
+    "id": 0,
+    "title": "销量地区数据列表",
+    "path": "/admino/SaleGoods/listSaleFa.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 销量地区数据列表\r\n     * /admino/SaleGoods/listSaleFa.json\r\n     * @param int $page 当前页默认为1\r\n     * @param int $limit 每页条数默认10\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function listSaleFa(int $page = 0, int $limit = 10)",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 销量地区数据列表\r\n     * /admino/SaleGoods/listSaleFa.json\r\n     * @param int $page 当前页默认为1\r\n     * @param int $limit 每页条数默认10\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     */\r\n    public function listSaleFa(int $page = 0, int $limit = 10)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "page",
+      "type": "text",
+      "example": "0",
+      "desc": " 当前页默认为1"
+     },
+     {
+      "required": 0,
+      "name": "limit",
+      "type": "text",
+      "example": "10",
+      "desc": " 每页条数默认10"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   },
+   "/admino/SaleGoods/saveSale.json": {
+    "id": 0,
+    "title": "销量修改某行数据",
+    "path": "/admino/SaleGoods/saveSale.json",
+    "catid": 2030,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n\r\n\r\n    /**\r\n     * 销量修改某行数据\r\n     * /admino/SaleGoods/saveSale.json\r\n     * @param int $farmer_goods_id 农作物的id\r\n     * @param array $data 保存的数据\r\n     * [[id:,value:]]\r\n     * id:month_data的里面的id\r\n     * id为\r\n     */\r\n    public function saveSale(int $farmer_goods_id, array $data)",
+    "markdown": "\r\n\r\n\r\n    /**\r\n     * 销量修改某行数据\r\n     * /admino/SaleGoods/saveSale.json\r\n     * @param int $farmer_goods_id 农作物的id\r\n     * @param array $data 保存的数据\r\n     * [[id:,value:]]\r\n     * id:month_data的里面的id\r\n     * id为\r\n     */\r\n    public function saveSale(int $farmer_goods_id, array $data)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 1,
+      "name": "farmer_goods_id",
+      "type": "text",
+      "example": "",
+      "desc": " 农作物的id"
+     },
+     {
+      "required": 1,
+      "name": "data",
+      "type": "text",
+      "example": "",
+      "desc": " 保存的数据"
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "测试龙游模块": {
+   "/test/LongYou/rec.json": {
+    "id": 0,
+    "title": "获取测试数据",
+    "path": "/test/LongYou/rec.json",
+    "catid": 2054,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n    /**\r\n     * 获取测试数据\r\n     * /test/LongYou/rec.json\r\n     * @param string $addr\r\n     * @param int $msgId\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\Exception\r\n     */\r\n    public function rec(string $addr = \"180.168.141.242\", int $msgId = 1)",
+    "markdown": "\r\n    /**\r\n     * 获取测试数据\r\n     * /test/LongYou/rec.json\r\n     * @param string $addr\r\n     * @param int $msgId\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\Exception\r\n     */\r\n    public function rec(string $addr = \"180.168.141.242\", int $msgId = 1)",
+    "req_body_other": "",
+    "req_body_type": "form",
+    "req_query": null,
+    "req_body_form": [
+     {
+      "required": 0,
+      "name": "addr",
+      "type": "text",
+      "example": "\"180.168.141.242\"",
+      "desc": ""
+     },
+     {
+      "required": 0,
+      "name": "msgId",
+      "type": "text",
+      "example": "1",
+      "desc": ""
+     }
+    ],
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  },
+  "脚本接口": {
+   "/admino/AsyncTask/getSensorData.json": {
+    "id": 0,
+    "title": "脚本获取采集板数据",
+    "path": "/admino/AsyncTask/getSensorData.json",
+    "catid": 2006,
+    "status": "done",
+    "method": "POST",
+    "req_body_is_json_schema": false,
+    "res_body_is_json_schema": false,
+    "desc": "\r\n    /**\r\n     * 脚本获取采集板数据\r\n     * /admino/AsyncTask/getSensorData.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\Exception\r\n     */\r\n    public function getSensorData()",
+    "markdown": "\r\n    /**\r\n     * 脚本获取采集板数据\r\n     * /admino/AsyncTask/getSensorData.json\r\n     * @throws \\think\\db\\exception\\DataNotFoundException\r\n     * @throws \\think\\db\\exception\\ModelNotFoundException\r\n     * @throws \\think\\exception\\DbException\r\n     * @throws \\think\\Exception\r\n     */\r\n    public function getSensorData()",
+    "req_body_other": "",
+    "req_body_type": "",
+    "req_query": null,
+    "req_body_form": null,
+    "req_headers": [
+     {
+      "name": "Content-Type",
+      "value": "application/x-www-form-urlencoded"
+     }
+    ],
+    "res_body": "",
+    "res_body_type": ""
+   }
+  }
+ }

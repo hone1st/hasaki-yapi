@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1e7fb69c-0a59-42c5-921a-564f4ca20ad7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp_yapi/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/tp_yapi/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2020_03_30_10_43_06/failure_.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/2020_03_30_10_43_06/success_.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tp_yapi/tp/tp_yapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/tp_yapi/tp/tp_yapi.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp_yapi/tp_yapi.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp_yapi/tp_yapi.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tp_yapi/tp_yapi.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tp_yapi/yapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tp_yapi/yapi.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,13 +45,16 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tp_yapi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="go" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\hasaki-yapi\tp_yapi" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\go_project\hasaki-yapi\tp_yapi\tp" />
       <recent name="C:\Users\Administrator\Desktop\go_project\hasaki-yapi\yapi" />
