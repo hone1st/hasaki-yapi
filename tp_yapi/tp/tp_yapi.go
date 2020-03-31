@@ -2,8 +2,8 @@ package tp
 
 import (
 	"fmt"
+	"github.com/liangsssttt/hasaki-yapi/yapi"
 	"gopkg.in/yaml.v2"
-	"hasaki-yapi/yapi"
 	"io/ioutil"
 	"log"
 	"os"
@@ -139,7 +139,7 @@ func (t *TpYapi) walk(filename string, fi os.FileInfo, err error) error {
 		modules := Split(strings.Replace(filename, Append(true, t.Controller, fi.Name()), "", -1))
 		module := modules[len(modules)-1]
 		control := Replace(fi.Name(), "", t.FileSuffix, ".php", ".class.php", "controller", "Controller")
-		dealFunction([]byte(strings.Split(string(b),cateName)[1]), cateName, "/"+module+"/"+control, t.PathSuffix)
+		dealFunction([]byte(strings.Split(string(b), cateName)[1]), cateName, "/"+module+"/"+control, t.PathSuffix)
 	}
 	return nil
 }

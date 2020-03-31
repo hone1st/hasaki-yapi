@@ -3,7 +3,7 @@ package yapi
 import (
 	"errors"
 	"fmt"
-	"hasaki-yapi/yapi/util"
+	"github.com/liangsssttt/hasaki-yapi/yapi/util"
 	"reflect"
 	"sync"
 )

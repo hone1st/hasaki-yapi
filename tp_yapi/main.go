@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"hasaki-yapi/tp_yapi/tp"
-	"hasaki-yapi/yapi"
+	"github.com/liangsssttt/hasaki-yapi/tp_yapi/tp"
+	"github.com/liangsssttt/hasaki-yapi/yapi"
 	"io/ioutil"
 	"log"
 	"os"
@@ -67,7 +67,7 @@ func main() {
 
 	fmt.Println("按下任意键结束：")
 	var i int
-	fmt.Scanf("按下任意键后enter结束：%i",i)
+	fmt.Scanf("按下任意键后enter结束：%i", i)
 }
 
 func transforMap(v interface{}) map[string]interface{} {

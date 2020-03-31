@@ -1,4 +1,4 @@
-module hasaki-yapi
+module github.com/liangsssttt/hasaki-yapi
 
 go 1.12
 
