@@ -2,6 +2,7 @@ package tp
 
 import (
 	"fmt"
+	"github.com/liangsssttt/hasaki-util/string_util"
 	"github.com/liangsssttt/hasaki-yapi/yapi"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
@@ -9,7 +10,6 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
-	"runtime"
 	"strings"
 	"sync"
 )
@@ -80,7 +80,7 @@ func readConfig() *Config {
 	}
 	if configPath == "" {
 		executePath := os.Args[0]
-		configPath = Append(false, filepath.Dir(executePath), "yapi.yaml")
+		configPath = string_util.SystemAppend(false, filepath.Dir(executePath), "yapi.yaml")
 	}
 	yamlFile, err := ioutil.ReadFile(configPath)
 	if err != nil {
@@ -135,10 +135,10 @@ func (t *TpYapi) walk(filename string, fi os.FileInfo, err error) error {
 		if cateName == "" {
 			return nil
 		}
-		cateName = Replace(cateName, "", "@api", " ")
-		modules := Split(strings.Replace(filename, Append(true, t.Controller, fi.Name()), "", -1))
+		cateName = string_util.Replace(cateName, "", "@api", " ")
+		modules := string_util.SystemSplit(strings.Replace(filename, string_util.SystemAppend(true, t.Controller, fi.Name()), "", -1))
 		module := modules[len(modules)-1]
-		control := Replace(fi.Name(), "", t.FileSuffix, ".php", ".class.php", "controller", "Controller")
+		control := string_util.Replace(fi.Name(), "", t.FileSuffix, ".php", ".class.php", "controller", "Controller")
 		dealFunction([]byte(strings.Split(string(b), cateName)[1]), cateName, "/"+module+"/"+control, t.PathSuffix)
 	}
 	return nil
@@ -149,11 +149,11 @@ func dealFunction(b []byte, cateName, path, suffix string) {
 	bs := re.FindAll(b, -1)
 
 	for _, v := range bs {
-		if Contains(string(v), false, "namespace", "class", "@api") || (!Contains(string(v), true, "public", "function")) {
+		if string_util.Contains(string(v), false, "namespace", "class", "@api") || (!string_util.Contains(string(v), true, "public", "function")) {
 			continue
 		}
 		reName := regexp.MustCompile(`function\s*?([^-~\s]*?)\(`)
-		name := Replace(string(reName.Find(v)), "", "function", " ", "(")
+		name := string_util.Replace(string(reName.Find(v)), "", "function", " ", "(")
 		reTitle := regexp.MustCompile("[^/\\*\n(\\s+)]+[\\s]*?[^/*\n(\\s+)]+")
 		title := string(reTitle.Find(v))
 		fields := dealFiled(v)
@@ -199,22 +199,22 @@ func dealFiled(b []byte) []*yapi.Field {
 	// 获取字段
 	reFiled, _ := regexp.Compile("\\(([^`]*?)\\)")
 	fieldsStr := reFiled.Find(b)
-	if !Contains(string(fieldsStr), true, "$") {
+	if !string_util.Contains(string(fieldsStr), true, "$") {
 		return nil
 	}
-	fields := strings.Split(Replace(string(fieldsStr), "", "int ", " int", " int ", " string", "string ", " string ", "array ", " array", " array ", "(", ")", "\r\n", " "), ",")
+	fields := strings.Split(string_util.Replace(string(fieldsStr), "", "int ", " int", " int ", " string", "string ", " string ", "array ", " array", " array ", "(", ")", "\r\n", " "), ",")
 	for _, v := range fields {
-		if !Contains(v, true, "$") {
+		if !string_util.Contains(v, true, "$") {
 			continue
 		}
 		f := &yapi.Field{}
 		tempS := strings.Split(v, "=")
 		if len(tempS) == 1 {
-			f.Name = Replace(tempS[0], "", "$")
+			f.Name = string_util.Replace(tempS[0], "", "$")
 			f.Example = ""
 			f.Required = 1
 		} else if len(tempS) == 2 {
-			f.Name = Replace(tempS[0], "", "$")
+			f.Name = string_util.Replace(tempS[0], "", "$")
 			f.Example = tempS[1]
 		}
 		if f.Name == "" {
@@ -233,46 +233,4 @@ func dealFiled(b []byte) []*yapi.Field {
 		fs = append(fs, f)
 	}
 	return fs
-}
-
-// b是否在前面加分隔符
-func Append(b bool, params ...string) string {
-	var s = "/"
-	if runtime.GOOS == "windows" {
-		s = "\\"
-	}
-	if b {
-		return s + strings.Join(params, s)
-	}
-	return strings.Join(params, s)
-}
-
-func Split(str string) []string {
-	var s = "/"
-	if runtime.GOOS == "windows" {
-		s = "\\"
-	}
-	return strings.Split(str, s)
-}
-
-func Replace(need string, new string, params ...string) string {
-	if len(params) == 0 {
-		return need
-	}
-
-	for _, v := range params {
-		need = strings.Replace(need, v, new, -1)
-	}
-	return need
-}
-
-// b true的时候都要包含
-// b false 包含其中一个
-func Contains(need string, b bool, params ...string) bool {
-	for _, v := range params {
-		if (strings.Contains(need, v) && !b) || (!strings.Contains(need, v) && b) {
-			return !b
-		}
-	}
-	return b
 }
