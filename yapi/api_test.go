@@ -7,7 +7,6 @@ import (
 )
 
 func TestApi(t *testing.T) {
-	Init()
 	desc := `/**
  * 获取账户余额
  * @param int $type 账户标识 1网站2红包3打赏4霸屏
@@ -46,7 +45,7 @@ func TestApi(t *testing.T) {
 		ReqHeaders: []*header{
 			GetHeader(XWwwFormUrlencoded),
 		},
-		ResBody:     `{
+		ResBody: `{
   "catid": 2334,
   "desc": "/** * 团队设置添加大区或者修改 * /admino/SaleGoods/aOsBigSaleA.json * @param string $name 大区名字 * @param string $sale_dest 销售指标 * @param string $sale_actual 实际销售 * @param int $id 默认为0则添加 */",
   "id": 4933,
@@ -89,7 +88,6 @@ func TestApi(t *testing.T) {
 	mp := make(map[string]interface{})
 	_ = json.Unmarshal(b, &mp)
 
-
 	//d, err := yapi.InterfaceAdd(mp)
 	d, err := yapi.InterfaceSave(mp)
 	if err != nil {
@@ -100,7 +98,6 @@ func TestApi(t *testing.T) {
 }
 
 func TestInterfaceAddCate(t *testing.T) {
-	Init()
 
 	cate := &Cate{
 		Id:   0,

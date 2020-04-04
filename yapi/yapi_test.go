@@ -5,13 +5,12 @@ import (
 	"testing"
 )
 
-func Init() {
-	Yinstace("0e7c10f66b5fc6b272e92927cd660d161fa5b02d70b6f6db87ac3d11d5b5932a", "http://api.ouxuan.net", 149)
+func init() {
+	Yinstace("22f43fc34baf856853e5f1c1618bf6df2e8511865b9d6ded1cd7", "http://api.exmaple.net", 19)
 
 }
 
 func TestProjectGet(t *testing.T) {
-	Init()
 	resp, err := yapi.ProjectGet()
 	if err != nil {
 		fmt.Println(err)
@@ -20,7 +19,6 @@ func TestProjectGet(t *testing.T) {
 
 }
 func TestInterfaceGetCateMenu(t *testing.T) {
-	Init()
 	resp, err := yapi.InterfaceGetCateMenu()
 	if err != nil {
 		fmt.Println(err)
@@ -29,7 +27,6 @@ func TestInterfaceGetCateMenu(t *testing.T) {
 
 }
 func TestInterfaceListCat(t *testing.T) {
-	Init()
 	resp, err := yapi.InterfaceListCat(750)
 	if err != nil {
 		fmt.Println(err)
@@ -38,7 +35,6 @@ func TestInterfaceListCat(t *testing.T) {
 
 }
 func TestInterfaceGet(t *testing.T) {
-	Init()
 	resp, err := yapi.InterfaceGet(1172)
 	if err != nil {
 		fmt.Println(err)
@@ -47,7 +43,6 @@ func TestInterfaceGet(t *testing.T) {
 
 }
 func TestInterfaceList(t *testing.T) {
-	Init()
 	resp, err := yapi.InterfaceList()
 	if err != nil {
 		fmt.Println(err)
@@ -56,7 +51,6 @@ func TestInterfaceList(t *testing.T) {
 
 }
 func TestInterfaceListMenu(t *testing.T) {
-	Init()
 	resp, err := yapi.InterfaceList()
 	if err != nil {
 		fmt.Println(err)
